@@ -1,0 +1,48 @@
+@mixin grillaDer {
+  display: grid;
+  grid-template-areas:
+    "img1 img2 img3"
+    "img4 img5 img3";
+  grid-template-columns: 1.69fr 1.34fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  &__img1 {
+    grid-area: img1;
+  }
+  &__img2 {
+    grid-area: img2;
+  }
+  &__img3 {
+    grid-area: img3;
+  }
+  &__img4 {
+    grid-area: img4;
+  }
+  &__img5 {
+    grid-area: img5;
+  }
+}
+
+@mixin flexFotos {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  &__img {
+    width: 49%;
+  }
+}
+
+@mixin circle {
+  cursor: pointer;
+  z-index: 2;
+  margin-top: 2rem;
+  margin-right: 3rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: $amarillo;
+  mask-image: radial-gradient(
+    circle farthest-side at center,
+    transparent 40%,
+    white 40%
+  );
+}

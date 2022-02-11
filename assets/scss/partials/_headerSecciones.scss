@@ -1,0 +1,26 @@
+.headerSecciones {
+  &__nav {
+    z-index: 2;
+    justify-content: space-between;
+    flex-direction: row;
+    &__menu {
+      width: auto;
+      &__circle {
+        @include circle;
+      }
+      p {
+        cursor: pointer;
+        z-index: 2;
+        font-family: "Futura Md BT";
+        font-size: 1.5rem;
+        text-align: center;
+        margin-right: 3rem;
+        width: 6rem;
+      }
+    }
+
+    &__img {
+      width: 400px;
+    }
+  }
+}

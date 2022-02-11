@@ -1,0 +1,184 @@
+.servicios {
+  position: relative;
+  background: #0000001a 0% 0% no-repeat padding-box;
+  &__tarjetas {
+    z-index: 1000;
+    position: absolute;
+    top: -1.5rem;
+    gap: 1rem;
+    justify-content: center;
+    margin-right: 0 !important;
+    &__tarjeta {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding-top: 2rem;
+      width: 70%;
+      margin-bottom: 5rem;
+      @media (min-width: 768px) {
+        & {
+          flex-basis: 48%;
+        }
+      }
+      @media (min-width: 1200px) {
+        & {
+          width: auto;
+          margin-bottom: 0;
+          flex-basis: 20%;
+        }
+      }
+      .tarjeta__titulo {
+        min-height: 70px;
+        font-family: "Futura Bold";
+        text-align: center;
+      }
+      .tarjeta__imgContainer {
+        position: relative;
+        padding-top: 100%;
+        img {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+      .tarjeta__lista {
+        padding: 0;
+        margin-bottom: 5rem;
+        text-align: center;
+        list-style: none;
+        font-family: "Futura Md BT";
+        font-size: 1.3rem;
+      }
+      .tarjeta__offset {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        bottom: -6.6em;
+        align-self: center;
+        &__circle {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          align-self: center;
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          &__btn {
+            font-size: 3rem;
+            font-weight: bold;
+          }
+        }
+        &__leyenda {
+          font-family: "Futura Bold";
+        }
+      }
+    }
+    .tarjeta1,
+    .circle1 {
+      background-color: $amarillo;
+    }
+    .tarjeta2,
+    .circle2 {
+      background-color: $rojoClaro;
+    }
+    .tarjeta3,
+    .circle3 {
+      background-color: $cyan;
+    }
+    .tarjeta4,
+    .circle4 {
+      background-color: $celeste;
+    }
+  }
+}
+
+.container-fluid {
+  padding: 0;
+}
+.col-lg-12 {
+  padding: 0;
+}
+.row {
+  margin: 0;
+}
+
+.body-index {
+  position: relative;
+  top: 55rem;
+  background-image: url("../../assets/img/index/Linea-Homepage.png");
+  background-position: 40% 50%;
+}
+#rueda {
+  background-image: url("../../assets/img/index/ruedaindex.png");
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 300px;
+}
+
+.box-equipo-index {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+.box-img-index {
+  height: 150px;
+}
+.box-img-index img {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.img1 {
+  margin-left: 830px;
+}
+
+.img2 {
+  margin-left: 290px;
+}
+.img3 {
+  margin-top: 220px;
+  margin-left: 580px;
+}
+
+.div-h2 {
+  margin-bottom: 30px;
+}
+.h2-index {
+  font-family: "Futura Bold";
+  font-size: 2rem;
+  margin-left: 250px;
+}
+
+.h3-index {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 325px;
+}
+
+/* CAROUSEL */
+.carousel {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.carousel-inner {
+  border-radius: 10px;
+}
+
+.carousel-indicators .indicador {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-width: inherit;
+  background-color: #ffb937;
+}

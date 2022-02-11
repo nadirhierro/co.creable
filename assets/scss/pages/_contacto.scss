@@ -1,0 +1,22 @@
+.contacto {
+  font-family: "Futura Bold";
+  display: flex;
+  &__info {
+    align-self: center;
+    &__titulo {
+      font-family: "Futura Heavy";
+      font-size: 2rem;
+    }
+    &__subtitulo {
+      font-family: "Futura Md";
+    }
+    &__flex {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      &__dato {
+        font-family: "Futura Book";
+      }
+    }
+  }
+}

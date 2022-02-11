@@ -1,0 +1,54 @@
+.proyectos {
+  &__titulo {
+    font-family: "Futura Heavy";
+    margin-top: 2rem;
+    padding-left: 2rem;
+  }
+  &__proyecto {
+    padding: 2rem;
+    font-family: "Futura Bold";
+    &__descripcion {
+      font-family: "Futura Md BT";
+    }
+    &__titulo {
+      text-align: center;
+      min-width: 32.5%;
+      margin-bottom: 3rem;
+      margin-top: 2rem;
+      display: inline-block;
+      padding: 1.5rem 4rem;
+      font-size: 1.3rem;
+      &--amarillo {
+        background-color: $amarillo;
+      }
+      &--rojo {
+        background-color: $rojoClaro;
+      }
+      &--cyan {
+        background-color: $cyan;
+      }
+      &--celeste {
+        background-color: $celeste;
+      }
+    }
+    &__grillaDer {
+      @include grillaDer;
+    }
+    &__flex1 {
+      @include flexFotos;
+    }
+    &__flex2 {
+      @include flexFotos;
+      &__img {
+        width: 23.5%;
+      }
+    }
+    &__flex3 {
+      display: flex;
+      gap: 2rem;
+      &__img {
+        width: 31.5%;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.modal-dialog {
+  max-width: none !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .modal-content {
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    background-color: $amarillo;
+    mask-image: radial-gradient(
+      circle farthest-side at center,
+      transparent 49%,
+      white 50%
+    );
+  }
+}
