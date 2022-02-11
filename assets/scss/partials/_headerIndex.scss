@@ -1,46 +1,65 @@
 .headerIndex {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   z-index: 999;
+  height: 80vh;
   &__nav {
-    margin-right: 0 !important;
-    align-self: end;
-    z-index: 2;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    align-items: end;
+    margin-bottom: 2rem;
+    @media (min-width: 767px) {
+      margin-right: 0 !important;
+      align-self: end;
+      flex-direction: column;
+      align-items: end;
+      z-index: 2;
+    }
     &__circle {
       @include circle;
     }
-    p {
+    &__title {
       cursor: pointer;
       z-index: 2;
       font-family: "Futura Md BT";
       font-size: 1.5rem;
       text-align: center;
       color: #ffffff;
-      margin-right: 3rem;
-      width: 6rem;
+      @media (min-width: 768px) {
+        & {
+          cursor: pointer;
+          z-index: 2;
+          font-family: "Futura Md BT";
+          font-size: 1.5rem;
+          text-align: center;
+          color: #ffffff;
+          margin-right: 3rem;
+          width: 6rem;
+        }
+      }
     }
   }
   &__hero {
-    margin-right: 0 !important;
-    display: flex;
-    flex-direction: column;
+    position: relative;
     align-items: end;
     justify-content: center;
-    position: relative;
-    height: 80vh;
+    margin-right: 0 !important;
+    flex-direction: column;
     &__titulo {
       padding-right: 0;
       z-index: 2;
       font-family: "Futura Bold";
       display: flex;
       flex-direction: column;
+      text-align: center;
       h2 {
         color: $amarillo;
-        font-size: 84px;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        @media (min-width: 768px) {
+          & {
+            font-size: 84px;
+          }
+        }
       }
       &__link {
         text-align: center;

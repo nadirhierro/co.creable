@@ -5,37 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Co.creable - Inicio</title>
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- Animate.css -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- Font awesome -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <!-- Own css -->
     <link rel="stylesheet" href="./assets/scss/main.css" />
   </head>
   <body>
     <header class="container-fluid headerIndex">
-      <nav class="row headerIndex__nav animate__animated animacion">
+      <nav class="row headerIndex__nav animate__animated">
         <div
-          class="headerIndex__nav__circle"
+          class="headerIndex__nav__circle animacion"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
         ></div>
-        <p>Menú</p>
+        <p class="headerIndex__nav__title animacion">Menú</p>
       </nav>
       <div class="row headerIndex__hero">
         <div
-          class="col-8 headerIndex__hero__titulo animate__animated animacion"
+          class="col-12 col-md-8 headerIndex__hero__titulo animate__animated animacion"
         >
           <h2>Co.creando un futuro en armonía para todos</h2>
           <a
@@ -46,8 +50,8 @@
         </div>
       </div>
     </header>
-    <main class="main">
-      <div class="servicios container-fluid">
+    <main class="main container-fluid">
+      <div class="servicios">
         <div class="row servicios__tarjetas">
           <div
             class="col-12 col-md-6 col-lg-3 servicios__tarjetas__tarjeta tarjeta1"
@@ -170,44 +174,48 @@
       </div>
       <div class="body-index container-fluid">
         <!-- inicio rueda  -->
-        <div class="row">
+        <div class="row rueda">
           <div class="col-xs-12 col-md-12 col-lg-12">
-            <div id="rueda">
-              <div class="row box-equipo-index">
-                <div class="col-xs-12 col-md-4 col-lg-4 box-img-index img1">
-                  <img
-                    src="./assets/img/index/alejandro3.jpg"
-                    alt="ALEJANDRO OCHOA ARÉVALO"
-                  />
-                  <h3 class="h-nombres">ARQ. ALEJANDRO OCHOA ARÉVALO</h3>
-                  <p class="p-nombres">
-                    Director de proyecto | Arquitecto Urbanista | Msc
-                    Planificación y Gestión Urbana Regional UNI.
-                  </p>
-                </div>
-                <div class="col-xs-12 col-md-4 col-lg-4 box-img-index">
-                  <img
-                    src="./assets/img/index/katia3.jpg"
-                    alt="KATIA VILCAHUAMÁN"
-                    class="img2"
-                  />
-
-                  <h3 class="h-nombres">ARQ. KATIA VILCAHUAMÁN HINOSTROZA</h3>
-                  <p class="p-nombres">
-                    Gerente General | Director Creativo | Arquitecta Paisajista-
-                    MBA Centrum.
-                  </p>
-                </div>
-                <div class="col-xs-12 col-md-4 col-lg-4 box-img-index img3">
-                  <img
-                    src="./assets/img/index/samekj3.jpg"
-                    alt="SAMEKJ ZAYRS RODRÍGUEZ LUCEN"
-                  />
-                  <h3 class="h-nombres">SAMEKJ ZAYRS RODRÍGUEZ LUCEN</h3>
-                  <p class="p-nombres">
-                    Social Media Manager | Especialista BIM.
-                  </p>
-                </div>
+            <div class="row box-equipo-index">
+              <div class="col-12">
+                <img
+                  src="./assets/img/index/ruedaindex.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-xs-12 col-md-4 col-lg-4 box-img-index img1">
+                <img
+                  src="./assets/img/index/alejandro3.jpg"
+                  alt="ALEJANDRO OCHOA ARÉVALO"
+                />
+                <h3 class="h-nombres">ARQ. ALEJANDRO OCHOA ARÉVALO</h3>
+                <p class="p-nombres">
+                  Director de proyecto | Arquitecto Urbanista | Msc
+                  Planificación y Gestión Urbana Regional UNI.
+                </p>
+              </div>
+              <div class="col-xs-12 col-md-4 col-lg-4 box-img-index">
+                <img
+                  src="./assets/img/index/katia3.jpg"
+                  alt="KATIA VILCAHUAMÁN"
+                  class="img2"
+                />
+                <h3 class="h-nombres">ARQ. KATIA VILCAHUAMÁN HINOSTROZA</h3>
+                <p class="p-nombres">
+                  Gerente General | Director Creativo | Arquitecta Paisajista-
+                  MBA Centrum.
+                </p>
+              </div>
+              <div class="col-xs-12 col-md-4 col-lg-4 box-img-index img3">
+                <img
+                  src="./assets/img/index/samekj3.jpg"
+                  alt="SAMEKJ ZAYRS RODRÍGUEZ LUCEN"
+                />
+                <h3 class="h-nombres">SAMEKJ ZAYRS RODRÍGUEZ LUCEN</h3>
+                <p class="p-nombres">
+                  Social Media Manager | Especialista BIM.
+                </p>
               </div>
             </div>
           </div>
@@ -220,7 +228,6 @@
           </div>
         </div>
         <!-- inicio carousel -->
-
         <div class="row carousel">
           <div
             id="carouselExampleCaptions"
@@ -337,30 +344,8 @@
           </div>
         </div>
         <!-- fin carousel -->
-
-        <!-- inicio footer -->
-        <footer class="row">
-          <div class="col-xs-12 col-md-12 col-lg-4">
-            <img
-              src="./assets/img/footer/logococreable2.png"
-              alt="logoCocreable"
-              class="logoFoot"
-            />
-          </div>
-          <div class="col-xs-12 col-md-12 col-lg-4 contactoFoot">
-            <p class="pContacto">CONTACTO</p>
-          </div>
-          <div class="col-xs-12 col-md-12 col-lg-4">
-            <p>
-              <i class="fas fa-location-arrow"></i>Av. Eugenio Garzón1283 Lima
-              14 Jesús Maria, Peru
-            </p>
-            <p><i class="fas fa-envelope"></i>Co.creable.pe@gmail.com</p>
-            <p><i class="fab fa-facebook-square"></i>Cocreable.pe</p>
-            <p><i class="fas fa-phone-alt"></i>+51 942 190 987</p>
-          </div>
-        </footer>
       </div>
+      <!-- Modal Menú -->
       <div
         class="modal fade"
         id="exampleModal"
@@ -373,7 +358,30 @@
         </div>
       </div>
     </main>
-    <footer class="footer"></footer>
+    <!-- inicio footer -->
+    <footer class="container-fluid">
+      <div class="row footerRow">
+        <div class="col-xs-12 col-md-12 col-lg-4">
+          <img
+            src="./assets/img/footer/logococreable2.png"
+            alt="logoCocreable"
+            class="logoFoot"
+          />
+        </div>
+        <div class="col-xs-12 col-md-12 col-lg-4 contactoFoot">
+          <p class="pContacto">CONTACTO</p>
+        </div>
+        <div class="col-xs-12 col-md-12 col-lg-4">
+          <p>
+            <i class="fas fa-location-arrow"></i>Av. Eugenio Garzón1283 Lima 14
+            Jesús Maria, Peru
+          </p>
+          <p><i class="fas fa-envelope"></i>Co.creable.pe@gmail.com</p>
+          <p><i class="fab fa-facebook-square"></i>Cocreable.pe</p>
+          <p><i class="fas fa-phone-alt"></i>+51 942 190 987</p>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

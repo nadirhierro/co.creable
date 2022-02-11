@@ -7,34 +7,42 @@
     top: -1.5rem;
     gap: 1rem;
     justify-content: center;
-    margin-right: 0 !important;
+    margin-right: 2rem;
+    margin-left: 2rem;
     &__tarjeta {
       position: relative;
       display: flex;
       flex-direction: column;
       padding-top: 2rem;
-      width: 70%;
       margin-bottom: 5rem;
+      box-shadow: $sombra;
       @media (min-width: 768px) {
         & {
+          margin-right: 0;
+          margin-left: 0;
           flex-basis: 48%;
         }
       }
       @media (min-width: 1200px) {
         & {
-          width: auto;
           margin-bottom: 0;
-          flex-basis: 20%;
+          flex-basis: 23%;
         }
       }
       .tarjeta__titulo {
-        min-height: 70px;
-        font-family: "Futura Bold";
+        display: flex;
+        justify-content: center;
+        align-content: center;
         text-align: center;
+        min-height: 120px;
+        align-items: center;
+        font-family: "Futura Bold";
+        margin-bottom: 2rem;
       }
       .tarjeta__imgContainer {
         position: relative;
         padding-top: 100%;
+        margin-bottom: 2rem;
         img {
           position: absolute;
           top: 0;
@@ -68,6 +76,7 @@
           height: 100px;
           width: 100px;
           border-radius: 50%;
+          box-shadow: $sombraCirculo;
           &__btn {
             font-size: 3rem;
             font-weight: bold;
@@ -97,88 +106,81 @@
   }
 }
 
-.container-fluid {
-  padding: 0;
-}
-.col-lg-12 {
-  padding: 0;
-}
-.row {
-  margin: 0;
-}
-
 .body-index {
   position: relative;
-  top: 55rem;
+  top: 220rem;
   background-image: url("../../assets/img/index/Linea-Homepage.png");
   background-position: 40% 50%;
-}
-#rueda {
-  background-image: url("../../assets/img/index/ruedaindex.png");
-  min-height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 300px;
+  .rueda {
+    .box-equipo-index {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: space-around; */
+      .box-img-index {
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img {
+          display: flex;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+        }
+      }
+      @media (min-width: 768px) {
+        & {
+          .img1 {
+            margin-left: 830px;
+          }
+
+          .img2 {
+            margin-left: 290px;
+          }
+          .img3 {
+            margin-top: 220px;
+            margin-left: 580px;
+          }
+        }
+      }
+    }
+  }
+  .div-h2 {
+    @media (min-width: 768px) {
+      & {
+        margin-bottom: 30px;
+        .h2-index {
+          font-family: "Futura Bold";
+          font-size: 2rem;
+          margin-left: 250px;
+        }
+
+        .h3-index {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-left: 325px;
+        }
+      }
+    }
+  }
 }
 
-.box-equipo-index {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-around; */
-}
-.box-img-index {
-  height: 150px;
-}
-.box-img-index img {
-  display: flex;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-.img1 {
-  margin-left: 830px;
-}
-
-.img2 {
-  margin-left: 290px;
-}
-.img3 {
-  margin-top: 220px;
-  margin-left: 580px;
-}
-
-.div-h2 {
-  margin-bottom: 30px;
-}
-.h2-index {
-  font-family: "Futura Bold";
-  font-size: 2rem;
-  margin-left: 250px;
-}
-
-.h3-index {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-left: 325px;
-}
-
-/* CAROUSEL */
 .carousel {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-}
-
-.carousel-inner {
-  border-radius: 10px;
-}
-
-.carousel-indicators .indicador {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border-width: inherit;
-  background-color: #ffb937;
+  .carousel-indicators {
+    .indicador {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border-width: inherit;
+      background-color: #ffb937;
+    }
+  }
+  .carousel-inner {
+    border-radius: 10px;
+  }
 }

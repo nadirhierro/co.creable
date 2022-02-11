@@ -1,30 +1,30 @@
-footer {
+.footerRow {
+  font-family: "Futura Book";
+  position: relative;
+  top: 220rem;
   background-color: #ffb937;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.logoFoot {
-  width: 60%;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
-}
-
-i {
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
-.contactoFoot {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  border-right: solid;
-}
-.pContacto {
-  font-family: "Futura Bold";
-  font-size: 2rem;
-  font-weight: bold;
+  .logoFoot {
+    width: 60%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+  }
+  i {
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .contactoFoot {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-right: solid;
+    .pContacto {
+      font-family: "Futura Bold";
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
 }

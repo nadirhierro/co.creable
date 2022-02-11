@@ -34,8 +34,6 @@
 @mixin circle {
   cursor: pointer;
   z-index: 2;
-  margin-top: 2rem;
-  margin-right: 3rem;
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
@@ -45,4 +43,10 @@
     transparent 40%,
     white 40%
   );
+  @media (min-width: 768px) {
+    & {
+      margin-top: 2rem;
+      margin-right: 3rem;
+    }
+  }
 }
