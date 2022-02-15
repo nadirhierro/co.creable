@@ -106,52 +106,94 @@
 }
 
 .nosotros {
+  margin-top: 5rem;
   margin-bottom: 2rem;
   background-image: url("../../assets/img/index/Linea-Homepage.png");
   background-position: bottom;
+  z-index: 1000;
   @media (min-width: 768px) {
     & {
       background-position: 40% 50%;
     }
   }
-  &__rueda {
-    &__integrantes {
-      display: flex;
-      flex-direction: column;
-      /* justify-content: space-around; */
-      .integrante {
-        margin: 2rem 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        &__nombre {
-          text-align: center;
-        }
-        &__data {
-          text-align: center;
-        }
-        &__img {
-          width: 150px;
-          height: 150px;
-          border-radius: 50%;
+  &__integrantes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .rueda__img {
+      @media (min-width: 768px) {
+        & {
+          display: none;
         }
       }
-      .integrante1 {
-        top: 52rem;
+    }
+    @media (min-width: 768px) {
+      & {
+        z-index: 999;
+        background-image: url("../../assets/img/index/ruedaindex.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 65%;
+      }
+    }
+    @media (min-width: 992px) {
+      & {
+        background-size: contain;
+      }
+    }
+    .integrante {
+      margin: 2rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      &__nombre {
+        font-family: "Futura Bold";
+        text-align: center;
+        font-size: 1rem;
+      }
+      &__data {
+        font-family: "Futura Book";
+        text-align: center;
+        margin: 0;
+        font-size: 0.8rem;
+      }
+      &__img {
+        align-self: flex-start;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
       }
       @media (min-width: 768px) {
         & {
-          .integrante1 {
-            margin-left: 830px;
-          }
-
-          .integrante2 {
-            margin-left: 290px;
-          }
-          .integrante3 {
-            margin-top: 220px;
-            margin-left: 580px;
+          max-width: 20rem;
+          position: relative;
+        }
+      }
+    }
+    .integrante2 {
+      img {
+        align-self: flex-end;
+      }
+    }
+    @media (min-width: 768px) {
+      & {
+        .integrante1 {
+          align-self: flex-end;
+          top: 5rem;
+          right: -2%;
+        }
+        .integrante2 {
+        }
+        .integrante3 {
+          right: -13%;
+          top: -2rem;
+          align-self: center;
+          flex-direction: row;
+          h3 {
+            width: 15rem;
+            flex-basis: 40%;
           }
         }
       }
