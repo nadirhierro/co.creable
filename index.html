@@ -29,7 +29,7 @@
   </head>
   <body>
     <header class="container-fluid headerIndex">
-      <nav class="row headerIndex__nav animate__animated">
+      <nav class="row headerIndex__nav animate__animated animacion">
         <div
           class="headerIndex__nav__circle animacion"
           data-bs-toggle="modal"
@@ -50,8 +50,8 @@
         </div>
       </div>
     </header>
-    <main class="main container-fluid">
-      <div class="servicios">
+    <main class="main">
+      <div class="servicios container-fluid">
         <div class="row servicios__tarjetas">
           <div
             class="col-12 col-md-6 col-lg-3 servicios__tarjetas__tarjeta tarjeta1"
@@ -59,7 +59,7 @@
             <h4 class="tarjeta__titulo">DISEÑO ARQUITECTÓNICO</h4>
             <div class="tarjeta__imgContainer">
               <img
-                src="./assets/img/index/tarjetaDiseñoArquitectonico.svg"
+                src="./assets/img/index/tarjetaDiseñoArquitectonico.jpg"
                 alt="Foto de Proyecto de Diseño Arquitectónico"
                 class="tarjeta__imgContainer__img img-fluid"
               />
@@ -88,7 +88,7 @@
             <h4 class="tarjeta__titulo">DISEÑO INTERIORES</h4>
             <div class="tarjeta__imgContainer">
               <img
-                src="./assets/img/index/tarjetaDiseñoInteriores.svg"
+                src="./assets/img/index/tarjetaDiseñoInteriores.jpg"
                 alt="Foto de Proyecto de Diseño Interiores"
                 class="tarjeta__imgContainer__img img-fluid"
               />
@@ -115,7 +115,7 @@
             <h4 class="tarjeta__titulo">DISEÑO SOSTENIBLE</h4>
             <div class="tarjeta__imgContainer">
               <img
-                src="./assets/img/index/tarjetaDiseñoSostenible.svg"
+                src="./assets/img/index/tarjetaDiseñoSostenible.jpg"
                 alt="Foto de Proyecto de Diseño Sostenible"
                 class="tarjeta__imgContainer__img img-fluid"
               />
@@ -146,7 +146,7 @@
             </h4>
             <div class="tarjeta__imgContainer">
               <img
-                src="./assets/img/index/tarjetaGestionDeProyectos.svg"
+                src="./assets/img/index/tarjetaGestionDeProyectos.jpg"
                 alt="Foto de Gestión de Proyectos y Planificación Urbana"
                 class="tarjeta__imgContainer__img img-fluid"
               />
@@ -172,63 +172,69 @@
           </div>
         </div>
       </div>
-      <div class="body-index container-fluid">
+      <div class="nosotros container-fluid">
         <!-- inicio rueda  -->
-        <div class="row rueda">
+        <div class="row nosotros__rueda">
           <div class="col-xs-12 col-md-12 col-lg-12">
-            <div class="row box-equipo-index">
-              <div class="col-12">
+            <div class="row nosotros__rueda__integrantes">
+              <div class="col-12 box">
                 <img
                   src="./assets/img/index/ruedaindex.png"
                   alt=""
                   class="img-fluid"
                 />
               </div>
-              <div class="col-xs-12 col-md-4 col-lg-4 box-img-index img1">
+              <div class="col-xs-12 col-md-4 col-lg-4 integrante integrante1">
                 <img
                   src="./assets/img/index/alejandro3.jpg"
+                  class="img-fluid integrante__img"
                   alt="ALEJANDRO OCHOA ARÉVALO"
                 />
-                <h3 class="h-nombres">ARQ. ALEJANDRO OCHOA ARÉVALO</h3>
-                <p class="p-nombres">
+                <h3 class="integrante__nombre">ARQ. ALEJANDRO OCHOA ARÉVALO</h3>
+                <p class="integrante__data">
                   Director de proyecto | Arquitecto Urbanista | Msc
                   Planificación y Gestión Urbana Regional UNI.
                 </p>
               </div>
-              <div class="col-xs-12 col-md-4 col-lg-4 box-img-index">
+              <div class="col-xs-12 col-md-4 col-lg-4 integrante integrante2">
                 <img
                   src="./assets/img/index/katia3.jpg"
+                  class="img-fluid integrante__img img2"
                   alt="KATIA VILCAHUAMÁN"
-                  class="img2"
                 />
-                <h3 class="h-nombres">ARQ. KATIA VILCAHUAMÁN HINOSTROZA</h3>
-                <p class="p-nombres">
+                <h3 class="integrante__nombre">
+                  ARQ. KATIA VILCAHUAMÁN HINOSTROZA
+                </h3>
+                <p class="integrante__data">
                   Gerente General | Director Creativo | Arquitecta Paisajista-
                   MBA Centrum.
                 </p>
               </div>
-              <div class="col-xs-12 col-md-4 col-lg-4 box-img-index img3">
+              <div class="col-xs-12 col-md-4 col-lg-4 integrante integrante3">
                 <img
                   src="./assets/img/index/samekj3.jpg"
+                  class="img-fluid integrante__img"
                   alt="SAMEKJ ZAYRS RODRÍGUEZ LUCEN"
                 />
-                <h3 class="h-nombres">SAMEKJ ZAYRS RODRÍGUEZ LUCEN</h3>
-                <p class="p-nombres">
+                <h3 class="integrante__nombre">SAMEKJ ZAYRS RODRÍGUEZ LUCEN</h3>
+                <p class="integrante__data">
                   Social Media Manager | Especialista BIM.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <!-- fin rueda -->
-        <div class="row">
-          <div class="col-xs-12 col-md-12 col-lg-12 div-h2">
-            <h2 class="h2-index">NUESTROS TRABAJOS</h2>
-            <h3 class="h3-index">Portafolio de proyectos</h3>
+      </div>
+      <!-- fin rueda -->
+      <div class="container-fluid carrusel">
+        <div class="row carrusel__titulo">
+          <div class="col-xs-12 col-md-12 col-lg-12">
+            <h2>NUESTROS TRABAJOS</h2>
+            <h3>Portafolio de proyectos</h3>
           </div>
         </div>
         <!-- inicio carousel -->
-        <div class="row carousel">
+        <div class="row carrusel__carrusel">
           <div
             id="carouselExampleCaptions"
             class="carousel slide"
@@ -343,8 +349,8 @@
             </button>
           </div>
         </div>
-        <!-- fin carousel -->
       </div>
+      <!-- fin carousel -->
       <!-- Modal Menú -->
       <div
         class="modal fade"
@@ -359,26 +365,35 @@
       </div>
     </main>
     <!-- inicio footer -->
-    <footer class="container-fluid">
-      <div class="row footerRow">
-        <div class="col-xs-12 col-md-12 col-lg-4">
+    <footer class="container-fluid footer">
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-4 footer__logo">
           <img
             src="./assets/img/footer/logococreable2.png"
             alt="logoCocreable"
-            class="logoFoot"
+            class="img-fluid footer__logo__img"
           />
         </div>
-        <div class="col-xs-12 col-md-12 col-lg-4 contactoFoot">
-          <p class="pContacto">CONTACTO</p>
+        <div class="col-xs-12 col-md-12 col-lg-4 footer__contacto">
+          <p class="footer__contacto__titulo">CONTACTO</p>
         </div>
         <div class="col-xs-12 col-md-12 col-lg-4">
-          <p>
-            <i class="fas fa-location-arrow"></i>Av. Eugenio Garzón1283 Lima 14
-            Jesús Maria, Peru
-          </p>
-          <p><i class="fas fa-envelope"></i>Co.creable.pe@gmail.com</p>
-          <p><i class="fab fa-facebook-square"></i>Cocreable.pe</p>
-          <p><i class="fas fa-phone-alt"></i>+51 942 190 987</p>
+          <div class="footer__contacto__data">
+            <i class="fas fa-location-arrow"></i>
+            <p>Av. Eugenio Garzón1283 Lima 14 Jesús Maria, Peru</p>
+          </div>
+          <div class="footer__contacto__data">
+            <i class="fas fa-envelope"></i>
+            <p class="footer__contacto__data">Co.creable.pe@gmail.com</p>
+          </div>
+          <div class="footer__contacto__data">
+            <i class="fab fa-facebook-square"></i>
+            <p class="footer__contacto__data">Cocreable.pe</p>
+          </div>
+          <div class="footer__contacto__data">
+            <i class="fas fa-phone-alt"></i>
+            <p class="footer__contacto__data">+51 942 190 987</p>
+          </div>
         </div>
       </div>
     </footer>

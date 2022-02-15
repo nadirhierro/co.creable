@@ -1,10 +1,10 @@
 .servicios {
-  position: relative;
   background: #0000001a 0% 0% no-repeat padding-box;
   &__tarjetas {
-    z-index: 1000;
-    position: absolute;
+    position: relative;
     top: -1.5rem;
+    offset-position: 1000px;
+    z-index: 1000;
     gap: 1rem;
     justify-content: center;
     margin-right: 2rem;
@@ -42,7 +42,6 @@
       .tarjeta__imgContainer {
         position: relative;
         padding-top: 100%;
-        margin-bottom: 2rem;
         img {
           position: absolute;
           top: 0;
@@ -106,39 +105,51 @@
   }
 }
 
-.body-index {
-  position: relative;
-  top: 220rem;
+.nosotros {
+  margin-bottom: 2rem;
   background-image: url("../../assets/img/index/Linea-Homepage.png");
-  background-position: 40% 50%;
-  .rueda {
-    .box-equipo-index {
+  background-position: bottom;
+  @media (min-width: 768px) {
+    & {
+      background-position: 40% 50%;
+    }
+  }
+  &__rueda {
+    &__integrantes {
       display: flex;
       flex-direction: column;
       /* justify-content: space-around; */
-      .box-img-index {
-        height: 150px;
+      .integrante {
+        margin: 2rem 0;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        img {
-          display: flex;
+        &__nombre {
+          text-align: center;
+        }
+        &__data {
+          text-align: center;
+        }
+        &__img {
           width: 150px;
           height: 150px;
           border-radius: 50%;
         }
       }
+      .integrante1 {
+        top: 52rem;
+      }
       @media (min-width: 768px) {
         & {
-          .img1 {
+          .integrante1 {
             margin-left: 830px;
           }
 
-          .img2 {
+          .integrante2 {
             margin-left: 290px;
           }
-          .img3 {
+          .integrante3 {
             margin-top: 220px;
             margin-left: 580px;
           }
@@ -146,17 +157,32 @@
       }
     }
   }
-  .div-h2 {
+}
+
+.carrusel {
+  @media (min-width: 576px) {
+    & {
+      top: 250rem;
+    }
+  }
+  &__titulo {
+    font-family: "Futura Bold";
+    margin-bottom: 1rem;
+    h2 {
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
+    }
     @media (min-width: 768px) {
       & {
         margin-bottom: 30px;
-        .h2-index {
-          font-family: "Futura Bold";
+        h2 {
           font-size: 2rem;
           margin-left: 250px;
         }
 
-        .h3-index {
+        h3 {
           font-size: 1.5rem;
           font-weight: bold;
           margin-left: 325px;
@@ -164,23 +190,24 @@
       }
     }
   }
-}
-
-.carousel {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  .carousel-indicators {
-    .indicador {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      border-width: inherit;
-      background-color: #ffb937;
+  &__carrusel {
+    .carousel {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+      .carousel-indicators {
+        .indicador {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          border-width: inherit;
+          background-color: #ffb937;
+        }
+      }
+      .carousel-inner {
+        border-radius: 10px;
+      }
     }
-  }
-  .carousel-inner {
-    border-radius: 10px;
   }
 }

@@ -26,12 +26,6 @@
       color: #ffffff;
       @media (min-width: 768px) {
         & {
-          cursor: pointer;
-          z-index: 2;
-          font-family: "Futura Md BT";
-          font-size: 1.5rem;
-          text-align: center;
-          color: #ffffff;
           margin-right: 3rem;
           width: 6rem;
         }
@@ -55,9 +49,9 @@
         color: $amarillo;
         font-size: 2rem;
         margin-bottom: 2rem;
-        @media (min-width: 768px) {
+        @media (min-width: 576px) {
           & {
-            font-size: 84px;
+            margin: 0 4rem;
           }
         }
       }
@@ -84,7 +78,7 @@
     height: 100%;
     z-index: 1;
     opacity: 1;
-    background-image: url("../../assets/img/index/heroIndex.svg");
+    background-image: url("../../assets/img/index/heroIndex.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
