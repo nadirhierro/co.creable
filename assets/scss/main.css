@@ -322,12 +322,16 @@
 }
 
 .nosotros {
-  margin-top: 5rem;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/img/index/Linea-Homepage.png");
 }
 
 @media (min-width: 768px) {
   .nosotros {
-    background-position: 40% 50%;
+    background-size: cover;
+    background-position: 0 14rem;
   }
 }
 
@@ -336,6 +340,31 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .nosotros__integrantes {
+    position: relative;
+    z-index: 900;
+    background-image: url("../../assets/img/index/ruedaindex.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 65%;
+  }
+}
+
+@media (min-width: 992px) {
+  .nosotros__integrantes {
+    margin-bottom: 10rem;
+    background-size: 50%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nosotros__integrantes {
+    margin-bottom: 10rem;
+    background-size: 20%;
+  }
 }
 
 .nosotros__integrantes__rueda {
@@ -363,6 +392,18 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .nosotros__integrantes .integrante .flex-container--1 {
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nosotros__integrantes .integrante .flex-container--1 {
+    margin-left: 6rem;
+  }
 }
 
 .nosotros__integrantes .integrante__nombre {
@@ -394,22 +435,22 @@
 @media (min-width: 992px) {
   .nosotros__integrantes .integrante1 {
     align-self: flex-end;
-    top: 7rem;
-    right: 1vw;
+    top: 18vw;
+    right: 3vw;
   }
   .nosotros__integrantes .integrante1 img {
     align-self: flex-start;
   }
   .nosotros__integrantes .integrante2 {
-    left: -1vw;
-    top: -5rem;
+    left: 2vw;
+    top: -5vw;
   }
   .nosotros__integrantes .integrante2 img {
     align-self: flex-end;
   }
   .nosotros__integrantes .integrante3 {
-    right: -11vw;
-    top: -2rem;
+    right: -12vw;
+    top: -8vw;
     align-self: center;
     flex-direction: row;
   }
@@ -421,16 +462,16 @@
 
 @media (min-width: 1200px) {
   .nosotros__integrantes .integrante1 {
-    top: 7rem;
-    right: 2vw;
+    top: 10vw;
+    right: 10vw;
   }
   .nosotros__integrantes .integrante2 {
-    left: -1vw;
-    top: -5rem;
+    left: 3vw;
+    top: -5vw;
   }
   .nosotros__integrantes .integrante3 {
     right: -11vw;
-    top: 2rem;
+    top: -2vw;
   }
 }
 
@@ -476,14 +517,16 @@
 .carrusel__titulo {
   font-family: "Futura Bold";
   margin-bottom: 1rem;
+  margin-left: 2rem;
+  display: flex;
 }
 
 .carrusel__titulo h2 {
-  text-align: center;
+  text-align: start;
 }
 
 .carrusel__titulo h3 {
-  text-align: center;
+  text-align: start;
 }
 
 @media (min-width: 768px) {
@@ -518,29 +561,6 @@
 
 .carrusel__carrusel .carousel .carousel-inner {
   border-radius: 10px;
-}
-
-@media (min-width: 992px) {
-  .nosotros__integrantes {
-    position: relative;
-    z-index: 900;
-    background-image: url("../../assets/img/index/ruedaindex.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 65%;
-  }
-}
-
-@media (min-width: 1400px) {
-  .nosotros__integrantes {
-    margin-bottom: 10rem;
-    background-size: contain;
-  }
-}
-
-.nosotros {
-  background-image: url("../../assets/img/index/Linea-Homepage.png");
-  background-position: bottom;
 }
 
 .body-nosotros {
@@ -802,6 +822,10 @@
   float: left;
 }
 
+.footer .col-md-4 {
+  border-left: 2px solid;
+}
+
 .footer__contacto {
   display: flex;
   justify-content: center;
@@ -809,6 +833,7 @@
 
 .footer__contacto__titulo {
   text-align: center;
+  align-self: center;
   font-family: "Futura Bold";
   font-size: 2rem;
   font-weight: bold;
@@ -829,13 +854,26 @@
   color: black;
 }
 
+@media (min-width: 768px) {
+  .footer__contacto__data {
+    flex-direction: row;
+  }
+}
+
 .footer__contacto__data i {
   display: flex;
   justify-content: center;
   padding: 0.5rem;
 }
 
+@media (min-width: 768px) {
+  .footer__contacto__data i {
+    justify-content: unset;
+  }
+}
+
 .footer__contacto__data p {
+  margin-bottom: 0;
   text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

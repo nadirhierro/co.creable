@@ -14,14 +14,22 @@
       float: left;
     }
   }
+  .col-md-4 {
+    border-left: 2px solid;
+  }
   &__contacto {
     display: flex;
     justify-content: center;
     &__titulo {
       text-align: center;
+      align-self: center;
       font-family: "Futura Bold";
       font-size: 2rem;
       font-weight: bold;
+      @media (min-width: 768px) {
+        & {
+        }
+      }
     }
     &__data {
       margin-bottom: 0.4rem;
@@ -35,12 +43,23 @@
       &:hover {
         color: black;
       }
+      @media (min-width: 768px) {
+        & {
+          flex-direction: row;
+        }
+      }
       i {
         display: flex;
         justify-content: center;
         padding: 0.5rem;
+        @media (min-width: 768px) {
+          & {
+            justify-content: unset;
+          }
+        }
       }
       p {
+        margin-bottom: 0;
         text-align: center;
       }
     }

@@ -106,10 +106,14 @@
 }
 
 .nosotros {
-  margin-top: 5rem;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/img/index/Linea-Homepage.png");
   @media (min-width: 768px) {
     & {
-      background-position: 40% 50%;
+      background-size: cover;
+      background-position: 0 14rem;
     }
   }
   &__integrantes {
@@ -117,6 +121,28 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    @media (min-width: 992px) {
+      & {
+        position: relative;
+        z-index: 900;
+        background-image: url("../../assets/img/index/ruedaindex.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 65%;
+      }
+    }
+    @media (min-width: 992px) {
+      & {
+        margin-bottom: 10rem;
+        background-size: 50%;
+      }
+    }
+    @media (min-width: 1400px) {
+      & {
+        margin-bottom: 10rem;
+        background-size: 20%;
+      }
+    }
     &__rueda {
       position: relative;
       z-index: 999;
@@ -139,6 +165,18 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      .flex-container--1 {
+        @media (min-width: 992px) {
+          & {
+            margin-left: 3rem;
+          }
+        }
+        @media (min-width: 1200px) {
+          & {
+            margin-left: 6rem;
+          }
+        }
+      }
       &__nombre {
         font-family: "Futura Bold";
         text-align: center;
@@ -166,22 +204,22 @@
       & {
         .integrante1 {
           align-self: flex-end;
-          top: 7rem;
-          right: 1vw;
+          top: 18vw;
+          right: 3vw;
           img {
             align-self: flex-start;
           }
         }
         .integrante2 {
-          left: -1vw;
-          top: -5rem;
+          left: 2vw;
+          top: -5vw;
           img {
             align-self: flex-end;
           }
         }
         .integrante3 {
-          right: -11vw;
-          top: -2rem;
+          right: -12vw;
+          top: -8vw;
           align-self: center;
           flex-direction: row;
           h3 {
@@ -194,16 +232,16 @@
     @media (min-width: 1200px) {
       & {
         .integrante1 {
-          top: 7rem;
-          right: 2vw;
+          top: 10vw;
+          right: 10vw;
         }
         .integrante2 {
-          left: -1vw;
-          top: -5rem;
+          left: 3vw;
+          top: -5vw;
         }
         .integrante3 {
           right: -11vw;
-          top: 2rem;
+          top: -2vw;
         }
       }
     }
@@ -252,11 +290,13 @@
   &__titulo {
     font-family: "Futura Bold";
     margin-bottom: 1rem;
+    margin-left: 2rem;
+    display: flex;
     h2 {
-      text-align: center;
+      text-align: start;
     }
     h3 {
-      text-align: center;
+      text-align: start;
     }
     @media (min-width: 768px) {
       & {
@@ -294,27 +334,4 @@
       }
     }
   }
-}
-
-.nosotros__integrantes {
-  @media (min-width: 992px) {
-    & {
-      position: relative;
-      z-index: 900;
-      background-image: url("../../assets/img/index/ruedaindex.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 65%;
-    }
-  }
-  @media (min-width: 1400px) {
-    & {
-      margin-bottom: 10rem;
-      background-size: contain;
-    }
-  }
-}
-.nosotros {
-  background-image: url("../../assets/img/index/Linea-Homepage.png");
-  background-position: bottom;
 }
