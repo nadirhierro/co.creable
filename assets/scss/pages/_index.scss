@@ -107,10 +107,6 @@
 
 .nosotros {
   margin-top: 5rem;
-  margin-bottom: 2rem;
-  background-image: url("../../assets/img/index/Linea-Homepage.png");
-  background-position: bottom;
-  z-index: 1000;
   @media (min-width: 768px) {
     & {
       background-position: 40% 50%;
@@ -121,25 +117,20 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    .rueda__img {
-      @media (min-width: 768px) {
+    &__rueda {
+      position: relative;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      @media (min-width: 992px) {
         & {
           display: none;
         }
       }
-    }
-    @media (min-width: 768px) {
-      & {
-        z-index: 999;
-        background-image: url("../../assets/img/index/ruedaindex.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 65%;
-      }
-    }
-    @media (min-width: 992px) {
-      & {
-        background-size: contain;
+      img {
+        width: 400px;
+        height: auto;
+        justify-self: center;
       }
     }
     .integrante {
@@ -151,43 +142,45 @@
       &__nombre {
         font-family: "Futura Bold";
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
       &__data {
         font-family: "Futura Book";
         text-align: center;
         margin: 0;
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
       &__img {
-        align-self: flex-start;
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
       }
-      @media (min-width: 768px) {
+      @media (min-width: 992px) {
         & {
           max-width: 20rem;
           position: relative;
         }
       }
     }
-    .integrante2 {
-      img {
-        align-self: flex-end;
-      }
-    }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       & {
         .integrante1 {
           align-self: flex-end;
-          top: 5rem;
-          right: -2%;
+          top: 7rem;
+          right: 1vw;
+          img {
+            align-self: flex-start;
+          }
         }
         .integrante2 {
+          left: -1vw;
+          top: -5rem;
+          img {
+            align-self: flex-end;
+          }
         }
         .integrante3 {
-          right: -13%;
+          right: -11vw;
           top: -2rem;
           align-self: center;
           flex-direction: row;
@@ -195,6 +188,55 @@
             width: 15rem;
             flex-basis: 40%;
           }
+        }
+      }
+    }
+    @media (min-width: 1200px) {
+      & {
+        .integrante1 {
+          top: 7rem;
+          right: 2vw;
+        }
+        .integrante2 {
+          left: -1vw;
+          top: -5rem;
+        }
+        .integrante3 {
+          right: -11vw;
+          top: 2rem;
+        }
+      }
+    }
+    @media (min-width: 1400px) {
+      & {
+        margin-bottom: 4rem;
+        .integrante1 {
+          top: 7rem;
+          right: 8vw;
+        }
+        .integrante2 {
+          left: 5vw;
+          top: -5rem;
+        }
+        .integrante3 {
+          right: -11vw;
+          top: 5rem;
+        }
+      }
+    }
+    @media (min-width: 1600px) {
+      & {
+        .integrante1 {
+          top: 7rem;
+          right: 15vw;
+        }
+        .integrante2 {
+          left: 12vw;
+          top: -5rem;
+        }
+        .integrante3 {
+          right: -11vw;
+          top: 5rem;
         }
       }
     }
@@ -252,4 +294,27 @@
       }
     }
   }
+}
+
+.nosotros__integrantes {
+  @media (min-width: 992px) {
+    & {
+      position: relative;
+      z-index: 900;
+      background-image: url("../../assets/img/index/ruedaindex.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 65%;
+    }
+  }
+  @media (min-width: 1400px) {
+    & {
+      margin-bottom: 10rem;
+      background-size: contain;
+    }
+  }
+}
+.nosotros {
+  background-image: url("../../assets/img/index/Linea-Homepage.png");
+  background-position: bottom;
 }
