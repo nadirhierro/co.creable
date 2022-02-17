@@ -1,5 +1,5 @@
 .landServicios {
-  background-image: url(../img/linea-servicios.png);
+  background-image: url("../../assets/img/servicios/linea-servicios.png");
   background-position: 45%;
   &__titulo {
     h3 {
@@ -78,6 +78,7 @@
         li {
           text-align: center;
           font-weight: bold;
+          background-color: white;
         }
       }
     }

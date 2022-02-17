@@ -16,9 +16,7 @@
       img {
         display: flex;
         justify-content: center;
-        max-width: 250px;
-        height: auto;
-        padding: auto;
+        max-width: 200px;
       }
     }
     &__menu {
@@ -28,7 +26,8 @@
       flex-direction: column;
       @media (min-width: 768px) {
         & {
-          margin-right: 1rem;
+          margin-top: 1rem;
+          margin-right: 6%;
           justify-content: center;
         }
       }
