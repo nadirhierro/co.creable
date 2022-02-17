@@ -6,12 +6,10 @@
   .modal-content {
     width: 50rem;
     height: 50rem;
-    border-radius: 50%;
-    background-color: $amarillo;
-    mask-image: radial-gradient(
-      circle farthest-side at center,
-      transparent 49%,
-      white 50%
-    );
+    background-color: transparent;
+    background-image: url("../../assets/img/index/ruedaindex.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }

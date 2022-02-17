@@ -1,7 +1,5 @@
 .headerIndex {
-  position: relative;
-  z-index: 999;
-  height: 80vh;
+  position: absolute;
   &__nav {
     justify-content: center;
     align-items: center;
@@ -31,56 +29,5 @@
         }
       }
     }
-  }
-  &__hero {
-    position: relative;
-    align-items: end;
-    justify-content: center;
-    margin-right: 0 !important;
-    flex-direction: column;
-    &__titulo {
-      padding-right: 0;
-      z-index: 2;
-      font-family: "Futura Bold";
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      h2 {
-        color: $amarillo;
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        @media (min-width: 576px) {
-          & {
-            margin: 0 4rem;
-          }
-        }
-      }
-      &__link {
-        text-align: center;
-        align-self: center;
-        color: white;
-        font-family: "Futura Md BT";
-        font-size: 1.5rem;
-        text-decoration: none;
-        background-color: $cyan;
-        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
-      }
-    }
-  }
-
-  &:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 1;
-    background-image: url("../../assets/img/index/heroIndex.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }
