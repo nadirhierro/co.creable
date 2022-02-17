@@ -84,14 +84,47 @@
   }
 }
 
+.headerSecciones {
+  padding-top: 1rem !important;
+}
+
 .headerSecciones__nav {
   z-index: 2;
-  justify-content: space-between;
-  flex-direction: row;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .headerSecciones__nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.headerSecciones__nav__boximg {
+  display: flex;
+  justify-content: center;
+}
+
+.headerSecciones__nav__boximg img {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  padding: auto;
 }
 
 .headerSecciones__nav__menu {
   width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .headerSecciones__nav__menu {
+    margin-right: 1rem;
+    justify-content: center;
+  }
 }
 
 .headerSecciones__nav__menu__circle {
@@ -104,25 +137,13 @@
   mask-image: radial-gradient(circle farthest-side at center, transparent 40%, white 40%);
 }
 
-@media (min-width: 768px) {
-  .headerSecciones__nav__menu__circle {
-    margin-top: 2rem;
-    margin-right: 3rem;
-  }
-}
-
 .headerSecciones__nav__menu p {
   cursor: pointer;
   z-index: 2;
   font-family: "Futura Md BT";
   font-size: 1.5rem;
   text-align: center;
-  margin-right: 3rem;
   width: 6rem;
-}
-
-.headerSecciones__nav__img {
-  width: 400px;
 }
 
 .modal-dialog {
@@ -196,72 +217,11 @@
 }
 
 .servicios {
-  position: relative;
-  top: -1.5rem;
   z-index: 1000;
   align-content: center;
   justify-content: center;
   margin: 0 !important;
-}
-
-.servicios:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 1.5rem;
-  width: 100%;
-  height: 99.2%;
-  opacity: 1;
   background-color: #0000001a;
-}
-
-@media (min-width: 576px) {
-  .servicios:before {
-    height: 99.15%;
-  }
-}
-
-@media (min-width: 768px) {
-  .servicios:before {
-    height: 98.5%;
-  }
-}
-
-@media (min-width: 800px) {
-  .servicios:before {
-    height: 98.45%;
-  }
-}
-
-@media (min-width: 900px) {
-  .servicios:before {
-    height: 98.41%;
-  }
-}
-
-@media (min-width: 992px) {
-  .servicios:before {
-    height: 98.4%;
-  }
-}
-
-@media (min-width: 1000px) {
-  .servicios:before {
-    height: 98.3%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .servicios:before {
-    height: 97%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .servicios:before {
-    height: 96.9%;
-  }
 }
 
 .servicios__tarjeta {
@@ -281,7 +241,7 @@
 
 @media (min-width: 1200px) {
   .servicios__tarjeta {
-    margin: 0.5rem 0.5rem 6rem 0.5rem;
+    margin: 0.5rem 0.5rem 2rem 0.5rem;
     flex-basis: 20%;
   }
 }
@@ -361,9 +321,27 @@
   background-color: #47a5c5;
 }
 
-.nosotros {
+.servicios__tarjeta--1 {
   position: relative;
   top: -1.5rem;
+}
+
+@media (min-width: 768px) {
+  .servicios__tarjeta--2 {
+    position: relative;
+    top: -1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .servicios__tarjeta--3, .servicios__tarjeta--4 {
+    position: relative;
+    top: -1.5rem;
+  }
+}
+
+.nosotros {
+  position: relative;
   background-image: url("../../assets/img/index/Linea-Homepage.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -381,7 +359,6 @@
   z-index: 999;
   opacity: 1;
   background-color: #0000001a;
-  background-repeat: no-repeat;
 }
 
 @media (min-width: 992px) {
@@ -414,6 +391,41 @@
   }
 }
 
+.nosotros__cuadrados {
+  position: absolute;
+  top: 13%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 1200px) {
+  .nosotros__cuadrados {
+    top: 13.5%;
+  }
+}
+
+.nosotros__cuadrados__cuadrado {
+  height: 30px;
+  width: 30px;
+}
+
+.nosotros__cuadrados__cuadrado--1 {
+  background-color: #ffb937;
+}
+
+.nosotros__cuadrados__cuadrado--2 {
+  background-color: #50b8b0;
+}
+
+.nosotros__cuadrados__cuadrado--3 {
+  background-color: #47a5c5;
+}
+
+.nosotros__cuadrados__cuadrado--4 {
+  background-color: #ea7158;
+}
+
 .nosotros__rueda {
   position: relative;
   display: flex;
@@ -443,7 +455,6 @@
 
 @media (min-width: 992px) {
   .nosotros__integrantes {
-    max-height: 95vh;
     position: relative;
     z-index: 1000;
     background-image: url("../../assets/img/index/ruedaindex.png");
@@ -453,7 +464,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .nosotros__integrantes {
     margin-bottom: 10rem;
     background-size: 48%;
@@ -539,22 +550,22 @@
   }
   .nosotros__integrantes__integrante--1 {
     align-self: flex-end;
-    top: 10vw;
-    right: 2vw;
+    top: 16%;
+    right: 2%;
   }
   .nosotros__integrantes__integrante--1 img {
     align-self: flex-start;
   }
   .nosotros__integrantes__integrante--2 {
-    right: 0vw;
-    top: -14vw;
+    right: 2%;
+    top: -15%;
   }
   .nosotros__integrantes__integrante--2 img {
     align-self: flex-end;
   }
   .nosotros__integrantes__integrante--3 {
-    right: -45vw;
-    top: -20vw;
+    right: -45%;
+    top: -1%;
     flex-direction: row;
   }
   .nosotros__integrantes__integrante--3 h4 {
@@ -568,16 +579,16 @@
 
 @media (min-width: 1200px) {
   .nosotros__integrantes__integrante--1 {
-    top: 8vw;
-    right: 6vw;
+    top: 20%;
+    right: 6%;
   }
   .nosotros__integrantes__integrante--2 {
-    top: -12vw;
-    right: -4vw;
+    top: -12%;
+    right: -4%;
   }
   .nosotros__integrantes__integrante--3 {
-    right: -45vw;
-    top: -12vw;
+    right: -47%;
+    top: -5%;
   }
 }
 
@@ -752,12 +763,12 @@
   margin-bottom: 180px;
 }
 
-.body-servicios {
+.landServicios {
   background-image: url(../img/linea-servicios.png);
   background-position: 45%;
 }
 
-.h-servicios {
+.landServicios__titulo h3 {
   font-family: "Futura Bold";
   font-size: 2rem;
   font-weight: bold;
@@ -767,24 +778,83 @@
   margin-left: 50px;
 }
 
-.box-servicios img {
-  width: 600px;
-  margin-left: 40px;
-  margin-bottom: 50px;
+.landServicios__servicio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 3rem;
+  margin-bottom: 2rem;
+  justify-content: space-around;
 }
 
-.h2-servicios {
+@media (min-width: 992px) {
+  .landServicios__servicio {
+    flex-direction: row;
+    padding: 0 5rem;
+  }
+}
+
+.landServicios__servicio__boximg {
+  display: flex;
+  justify-content: center;
+  order: 2;
+}
+
+.landServicios__servicio__boximg img {
+  width: 500px;
+}
+
+@media (min-width: 992px) {
+  .landServicios__servicio__boximg {
+    order: 1;
+  }
+}
+
+.landServicios__servicio__data {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  order: 1;
+}
+
+@media (min-width: 992px) {
+  .landServicios__servicio__data {
+    order: 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .landServicios__servicio__data {
+    width: 35rem;
+  }
+}
+
+.landServicios__servicio__data h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3rem;
+  width: 20rem;
+  padding: 0 0.5rem;
   font-family: "Futura Bold";
-  margin-right: 50px;
-  margin-left: 50px;
   font-weight: bold;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  text-align: center;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
-.p-servicios {
+@media (min-width: 576px) {
+  .landServicios__servicio__data h4 {
+    width: 32rem;
+  }
+}
+
+.landServicios__servicio__data ul {
+  font-family: "Futura Md BT";
+  list-style: none;
+  padding: 0;
+}
+
+.landServicios__servicio__data ul li {
   text-align: center;
   font-weight: bold;
 }
@@ -1004,13 +1074,15 @@
   }
 }
 
-.footer__contacto__data {
-  border-left: 2px solid;
-}
-
 @media (min-width: 768px) {
   .footer__contacto__data {
     justify-content: unset;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer__contacto__data {
+    border-left: 2px solid;
   }
 }
 

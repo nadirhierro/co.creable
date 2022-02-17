@@ -50,3 +50,17 @@
     }
   }
 }
+
+@mixin circle2 {
+  cursor: pointer;
+  z-index: 2;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: $amarillo;
+  mask-image: radial-gradient(
+    circle farthest-side at center,
+    transparent 40%,
+    white 40%
+  );
+}

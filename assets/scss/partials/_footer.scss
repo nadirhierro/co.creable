@@ -44,7 +44,11 @@
           justify-content: unset;
         }
       }
-      border-left: 2px solid;
+      @media (min-width: 992px) {
+        & {
+          border-left: 2px solid;
+        }
+      }
       &--link {
         margin-bottom: 0.4rem;
         display: flex;

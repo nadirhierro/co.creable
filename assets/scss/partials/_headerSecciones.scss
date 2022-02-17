@@ -1,12 +1,38 @@
 .headerSecciones {
+  padding-top: 1rem !important;
   &__nav {
     z-index: 2;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      & {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    &__boximg {
+      display: flex;
+      justify-content: center;
+      img {
+        display: flex;
+        justify-content: center;
+        max-width: 400px;
+        padding: auto;
+      }
+    }
     &__menu {
       width: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      @media (min-width: 768px) {
+        & {
+          margin-right: 1rem;
+          justify-content: center;
+        }
+      }
       &__circle {
-        @include circle;
+        @include circle2;
       }
       p {
         cursor: pointer;
@@ -14,13 +40,8 @@
         font-family: "Futura Md BT";
         font-size: 1.5rem;
         text-align: center;
-        margin-right: 3rem;
         width: 6rem;
       }
-    }
-
-    &__img {
-      width: 400px;
     }
   }
 }

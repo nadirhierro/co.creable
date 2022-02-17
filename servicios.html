@@ -27,15 +27,21 @@
     <!-- Own css -->
     <link rel="stylesheet" href="./assets/scss/main.css" />
   </head>
-  <body class="body-servicios">
+  <body>
+    <!-- Header -->
     <header class="container-fluid headerSecciones">
+      <!-- Nav -->
       <nav class="row headerSecciones__nav">
-        <img
-          class="img-fluid headerSecciones__nav__img"
-          src="./assets/img/header/logo.jpg"
-          alt=""
-        />
-        <div class="headerSecciones__nav__menu animate__animated animacion">
+        <div class="col-12 col-md-4 headerSecciones__nav__boximg">
+          <img
+            class="img-fluid headerSecciones__nav__img"
+            src="./assets/img/header/locoCocreable.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="col-12 col-md-4 headerSecciones__nav__menu animate__animated animacion"
+        >
           <div
             class="headerSecciones__nav__menu__circle"
             data-bs-toggle="modal"
@@ -44,142 +50,157 @@
           <p>Menú</p>
         </div>
       </nav>
+      <!-- Modal Nav -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content"></div>
+        </div>
+      </div>
     </header>
-    <div class="container-fluid">
-      <div class="col-xs-12 col-md-12 col-lg-12">
-        <h1 class="h-servicios">
-          Prestamos servicios durante todas las fases y etapas de construcción
-          de un proyecto arquitectónico.
-        </h1>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-12 col-lg-6 box-servicios">
-          <img
-            src="./assets/img/servicios/arquitectonico.jpg"
-            alt=""
-            class="img-fluid"
-          />
+    <!-- Main -->
+    <main class="container-fluid">
+      <!-- Row -->
+      <div class="row landServicios">
+        <!-- Col Título -->
+        <div class="col-12 landServicios__titulo">
+          <h3>
+            Prestamos servicios durante todas las fases y etapas de construcción
+            de un proyecto arquitectónico.
+          </h3>
         </div>
-        <div class="col-xs-12 col-md-12 col-lg-6">
-          <h2 class="h2-servicios" style="background-color: #ffb937">
-            DISEÑO ARQUITECTÓNICO
-          </h2>
-          <p class="p-servicios">
-            - Diseño de anteproyecto de arquitectura de tipo residencial.
-          </p>
-          <p class="p-servicios">
-            - Diseño general de espacios retail y corporativos.
-          </p>
-          <p class="p-servicios">
-            - Desarrollo e implementación de mobiliario.
-          </p>
+        <!-- Col por cada servicio -->
+        <div class="col-12 landServicios__servicio">
+          <div class="landServicios__servicio__boximg">
+            <img
+              src="./assets/img/servicios/arquitectonico.jpg"
+              alt="Diseño Arquitectónico"
+              class="img-fluid"
+            />
+          </div>
+          <div class="landServicios__servicio__data">
+            <h4 style="background-color: #ffb937">DISEÑO ARQUITECTÓNICO</h4>
+            <ul>
+              <li>
+                - Diseño de anteproyecto de arquitectura de tipo residencial.
+              </li>
+              <li>- Diseño general de espacios retail y corporativos.</li>
+              <li>- Desarrollo e implementación de mobiliario.</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-12 col-lg-6 box-servicios">
-          <img
-            src="./assets/img/servicios/Interior.jpg"
-            alt=""
-            class="img-fluid"
-          />
+        <div class="col-12 landServicios__servicio">
+          <div class="landServicios__servicio__boximg">
+            <img
+              src="./assets/img/servicios/Interior.jpg"
+              alt="Diseño interior"
+              class="img-fluid"
+            />
+          </div>
+          <div class="landServicios__servicio__data">
+            <h4 style="background-color: #ea7158">DISEÑO INTERIOR</h4>
+            <ul>
+              <li>
+                - Diseño de anteproyecto de arquitectura de tipo residencial.
+              </li>
+              <li>- Diseño general de espacios retail y corporativos.</li>
+              <li>- Desarrollo e implementación de mobiliario.</li>
+            </ul>
+          </div>
         </div>
-        <div class="col-xs-12 col-md-12 col-lg-6">
-          <h2 class="h2-servicios" style="background-color: #ea7158">
-            DISEÑO INTERIOR
-          </h2>
-          <p class="p-servicios">
-            - Diseño de anteproyecto de arquitectura de tipo residencial.
-          </p>
-          <p class="p-servicios">
-            - Diseño general de espacios retail y corporativos.
-          </p>
-          <p class="p-servicios">
-            - Desarrollo e implementación de mobiliario.
-          </p>
+        <div class="col-12 landServicios__servicio">
+          <div class="landServicios__servicio__boximg">
+            <img
+              src="./assets/img/servicios/Sostenible.jpg"
+              alt="Diseño sostenible"
+              class="img-fluid"
+            />
+          </div>
+          <div class="landServicios__servicio__data">
+            <h4 style="background-color: #50b8b0">DISEÑO SOSTENIBLE</h4>
+            <ul>
+              <li>
+                - Diseño de anteproyecto de arquitectura de tipo residencial.
+              </li>
+              <li>- Diseño general de espacios retail y corporativos.</li>
+              <li>- Desarrollo e implementación de mobiliario.</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-12 col-lg-6 box-servicios">
-          <img
-            src="./assets/img/servicios/Sostenible.jpg"
-            alt=""
-            class="img-fluid"
-          />
-        </div>
-        <div class="col-xs-12 col-md-12 col-lg-6">
-          <h2 class="h2-servicios" style="background-color: #50b8b0">
-            DISEÑO SOSTENIBLE
-          </h2>
-          <p class="p-servicios">
-            - Diseño de anteproyecto de arquitectura de tipo residencial.
-          </p>
-          <p class="p-servicios">
-            - Diseño general de espacios retail y corporativos.
-          </p>
-          <p class="p-servicios">
-            - Desarrollo e implementación de mobiliario.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-12 col-lg-6 box-servicios">
-          <img
-            src="./assets/img/servicios/Gestiondeproyectos.jpg"
-            alt=""
-            class="img-fluid"
-          />
-        </div>
-        <div class="col-xs-12 col-md-12 col-lg-6">
-          <h2 class="h2-servicios" style="background-color: #47a5c5">
-            GESTION DE PROYECTOS Y PLANIFICACION URBANA
-          </h2>
-          <p class="p-servicios">
-            - Diseño de anteproyecto de arquitectura de tipo residencial.
-          </p>
-          <p class="p-servicios">
-            - Diseño general de espacios retail y corporativos.
-          </p>
-          <p class="p-servicios">
-            - Desarrollo e implementación de mobiliario.
-          </p>
+        <div class="col-12 landServicios__servicio">
+          <div class="landServicios__servicio__boximg">
+            <img
+              src="./assets/img/servicios/Gestiondeproyectos.jpg"
+              alt="Gestión de proyectos y planificación urbana"
+              class="img-fluid"
+            />
+          </div>
+          <div class="landServicios__servicio__data">
+            <h4 style="background-color: #47a5c5">
+              GESTION DE PROYECTOS Y PLANIFICACION URBANA
+            </h4>
+            <ul>
+              <li>
+                - Diseño de anteproyecto de arquitectura de tipo residencial.
+              </li>
+              <li>- Diseño general de espacios retail y corporativos.</li>
+              <li>- Desarrollo e implementación de mobiliario.</li>
+            </ul>
+          </div>
         </div>
       </div>
-
-      <!-- inicio footer -->
-      <footer class="row">
-        <div class="col-xs-12 col-md-12 col-lg-4">
+    </main>
+    <!-- Footer -->
+    <footer class="container-fluid footer">
+      <div class="row align-items-center">
+        <div class="col-xs-12 col-md-4 footer__logo">
           <img
             src="./assets/img/footer/logococreable2.png"
             alt="logoCocreable"
-            class="logoFoot"
+            class="img-fluid footer__logo__img"
           />
         </div>
-        <div class="col-xs-12 col-md-12 col-lg-4 contactoFoot">
-          <p class="pContacto">CONTACTO</p>
+        <div class="col-xs-12 col-md-4 footer__contacto">
+          <p class="footer__contacto__titulo">CONTACTO</p>
         </div>
-        <div class="col-xs-12 col-md-12 col-lg-4">
-          <p>
-            <i class="fas fa-location-arrow"></i>Av. Eugenio Garzón1283 Lima 14
-            Jesús Maria, Peru
-          </p>
-          <p><i class="fas fa-envelope"></i>Co.creable.pe@gmail.com</p>
-          <p><i class="fab fa-facebook-square"></i>Cocreable.pe</p>
-          <p><i class="fas fa-phone-alt"></i>+51 942 190 987</p>
+        <div class="col-xs-12 col-md-4 footer__contacto__data">
+          <a href="./contacto.html" class="footer__contacto__data--link">
+            <i class="fas fa-location-arrow"></i>
+            <p>Av. Eugenio Garzón1283 Lima 14 Jesús Maria, Peru</p>
+          </a>
+          <a
+            href="mailto:co.creable.pe@gmail.com"
+            class="footer__contacto__data--link"
+          >
+            <i class="fas fa-envelope"></i>
+            <p class="footer__contacto__data--link">Co.creable.pe@gmail.com</p>
+          </a>
+          <a
+            href="https://www.facebook.com/cocreable.pe"
+            class="footer__contacto__data--link"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-square"></i>
+            <p class="footer__contacto__data--link">Cocreable.pe</p>
+          </a>
+          <a
+            href="https://wa.me/51942190987"
+            class="footer__contacto__data--link"
+            target="_blank"
+          >
+            <i class="fas fa-phone-alt"></i>
+            <p class="footer__contacto__data--link">+51 942 190 987</p>
+          </a>
         </div>
-      </footer>
-    </div>
-    <!-- fin footer -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content"></div>
       </div>
-    </div>
+    </footer>
+    <!-- fin footer -->
+
     <!-- scripts bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
