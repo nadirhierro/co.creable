@@ -810,38 +810,76 @@
   }
 }
 
-.body-nosotros {
-  background-image: url(../img/linea-nosotros.png);
-  background-position: 40% 25%;
-  /* position  48 25 */
+@media (min-width: 992px) {
+  .landNosotros {
+    background-image: url("../../assets/img/nosotros/Linea-nosotros.png");
+    background-repeat: repeat-y;
+    background-position: -30rem 13rem;
+  }
 }
 
-.body-nosotros .paisajeInt {
+@media (min-width: 1100px) {
+  .landNosotros {
+    background-position: -28rem 10rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .landNosotros {
+    background-position: -25rem 7rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .landNosotros {
+    background-position: -15rem 5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .landNosotros {
+    background-position: -5rem 2rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .landNosotros {
+    background-position: 0rem 0rem;
+  }
+}
+
+.landNosotros__hero__boximg {
   display: flex;
   width: 100%;
   height: 200px;
+  padding: 0;
 }
 
-.body-nosotros .paisajeInt img {
+.landNosotros__hero__boximg img {
   width: 100%;
   object-fit: cover;
 }
 
-.body-nosotros .h-nosotros {
-  font-family: "Futura Bold";
-  font-size: 30px;
-  text-align: center;
-  margin-top: 70px;
-  margin-bottom: 50px;
+.landNosotros__data {
+  margin: 4rem 4rem 4rem 4rem;
 }
 
-.body-nosotros .p-nosotros {
+.landNosotros__data__titulo {
+  font-family: "Futura Heavy";
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.landNosotros__data__parrafo {
+  font-family: "Futura Md BT";
   font-weight: bold;
-  font-size: 20px;
+  text-align: left;
+  font-size: 1.4rem;
   margin-left: 55px;
 }
 
-.body-nosotros .h-nuestroequipo {
+.landNosotros__equipo__titulo {
   font-family: "Futura Bold";
   text-align: center;
   font-weight: bold;
@@ -850,37 +888,49 @@
   margin-bottom: 100px;
 }
 
-.body-nosotros .box-equipo {
+.landNosotros__equipo__integrante {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 4rem 4rem;
+  min-height: 500px;
 }
 
-.body-nosotros .box-img {
+.landNosotros__equipo__integrante .integrante__cajaImagen {
   display: flex;
   justify-content: center;
   width: 150px;
   height: 150px;
 }
 
-.body-nosotros .box-img img {
+.landNosotros__equipo__integrante .integrante__cajaImagen img {
   border-radius: 50%;
   border: solid #efa721;
 }
 
-.body-nosotros .h-nombres {
-  font-family: "Futura STD BC";
+@media (min-width: 768px) {
+  .landNosotros__equipo__integrante {
+    padding: 4rem 4rem;
+  }
+}
+
+.landNosotros__equipo__integrante .integrante__data {
+  display: flex;
+  flex-direction: column;
+}
+
+.landNosotros__equipo__integrante .integrante__data__nombre {
+  font-family: "Futura Bold";
   text-align: center;
   padding-top: 15px;
   font-size: 25px;
 }
 
-.body-nosotros .p-nombres {
+.landNosotros__equipo__integrante .integrante__data__cv {
+  font-family: "Futura Md BT";
   text-align: center;
   font-weight: bold;
-}
-
-.body-nosotros .box-nombres {
-  margin-bottom: 180px;
 }
 
 .landServicios {
