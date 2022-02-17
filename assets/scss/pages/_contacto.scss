@@ -1,22 +1,45 @@
 .contacto {
   font-family: "Futura Bold";
-  display: flex;
+  margin-bottom: 4rem;
   &__info {
     align-self: center;
+    text-align: center;
+    @media (min-width: 992px) {
+      text-align: start;
+    }
     &__titulo {
       font-family: "Futura Heavy";
       font-size: 2rem;
+      @media (min-width: 992px) {
+        margin-left: 2rem;
+      }
     }
     &__subtitulo {
       font-family: "Futura Md";
       margin-bottom: 2rem;
+      @media (min-width: 992px) {
+        margin-left: 1.5rem;
+      }
     }
     &__flex {
       display: flex;
       gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      @media (min-width: 992px) {
+        justify-content: flex-start;
+      }
       &__dato {
+        display: flex;
+        margin-bottom: 0;
+        align-content: center;
         font-family: "Futura Book";
       }
     }
+  }
+  &__mapa {
+    display: flex;
+    justify-content: center;
   }
 }

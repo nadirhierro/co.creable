@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./assets/scss/main.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="container-fluid headerSecciones">
       <nav class="row headerSecciones__nav">
         <img
@@ -44,8 +45,22 @@
           <p>Menú</p>
         </div>
       </nav>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content"></div>
+        </div>
+      </div>
     </header>
+    <!-- Main -->
     <main class="main container">
+      <!-- Contacto -->
       <div class="row contacto">
         <div class="col-lg-6 contacto__info">
           <h3 class="contacto__info__titulo">Contáctanos</h3>
@@ -69,10 +84,11 @@
             <p class="contacto__info__flex__dato">+51 942 190 987</p>
           </div>
         </div>
-        <div class="col-lg-6 contacto__mapa p-5">
+        <!-- Mapa -->
+        <div class="col-lg-6 contacto__mapa">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.5725699188292!2d-77.05224988518714!3d-12.072902791449865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8e48597c7ab%3A0x293f38c17e80168e!2sAv.%20Gral.%20Eugenio%20Garz%C3%B3n%201283%2C%20Jes%C3%BAs%20Mar%C3%ADa%2015072%2C%20Per%C3%BA!5e0!3m2!1ses-419!2sar!4v1644597114203!5m2!1ses-419!2sar"
-            width="500"
+            width="600"
             height="400"
             style="border: 0"
             allowfullscreen=""
@@ -80,19 +96,50 @@
           ></iframe>
         </div>
       </div>
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content"></div>
+    </main>
+    <!-- Footer -->
+    <footer class="container-fluid footer">
+      <div class="row align-items-center">
+        <div class="col-xs-12 col-md-4 footer__logo">
+          <img
+            src="./assets/img/footer/logococreable2.png"
+            alt="logoCocreable"
+            class="img-fluid footer__logo__img"
+          />
+        </div>
+        <div class="col-xs-12 col-md-4 footer__contacto">
+          <p class="footer__contacto__titulo">CONTACTO</p>
+        </div>
+        <div class="col-xs-12 col-md-4 footer__contacto__data">
+          <a href="./contacto.html" class="footer__contacto__data--link">
+            <i class="fas fa-location-arrow"></i>
+            <p>Av. Eugenio Garzón1283 Lima 14 Jesús Maria, Peru</p>
+          </a>
+          <a
+            href="mailto:co.creable.pe@gmail.com"
+            class="footer__contacto__data--link"
+          >
+            <i class="fas fa-envelope"></i>
+            <p class="footer__contacto__data--link">Co.creable.pe@gmail.com</p>
+          </a>
+          <a
+            href="https://www.facebook.com/cocreable.pe"
+            class="footer__contacto__data--link"
+          >
+            <i class="fab fa-facebook-square"></i>
+            <p class="footer__contacto__data--link">Cocreable.pe</p>
+          </a>
+          <a
+            href="https://wa.me/51942190987"
+            class="footer__contacto__data--link"
+          >
+            <i class="fas fa-phone-alt"></i>
+            <p class="footer__contacto__data--link">+51 942 190 987</p>
+          </a>
         </div>
       </div>
-    </main>
-    <footer></footer>
+    </footer>
+    <!-- Scripts bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -103,6 +150,7 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+    <!-- Script menú -->
     <script src="./assets/js/tweek.js"></script>
   </body>
 </html>
