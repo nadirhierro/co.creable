@@ -109,7 +109,8 @@
 .headerSecciones__nav__boximg img {
   display: flex;
   justify-content: center;
-  max-width: 400px;
+  max-width: 250px;
+  height: auto;
   padding: auto;
 }
 
@@ -1044,7 +1045,7 @@
 }
 
 .footer__logo__img {
-  width: 60%;
+  max-width: 250px;
   margin-left: auto;
   margin-right: auto;
   float: left;
