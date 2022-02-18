@@ -5,10 +5,14 @@
     padding-left: 2rem;
   }
   &__proyecto {
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
     font-family: "Futura Bold";
     &__descripcion {
+      padding: 1rem;
       font-family: "Futura Md BT";
+      font-size: 1.5rem;
     }
     &__titulo {
       text-align: center;
@@ -31,24 +35,11 @@
         background-color: $celeste;
       }
     }
+    &__lista {
+      font-size: 1.2rem;
+    }
     &__grillaDer {
       @include grillaDer;
-    }
-    &__flex1 {
-      @include flexFotos;
-    }
-    &__flex2 {
-      @include flexFotos;
-      &__img {
-        width: 23.5%;
-      }
-    }
-    &__flex3 {
-      display: flex;
-      gap: 2rem;
-      &__img {
-        width: 31.5%;
-      }
     }
   }
 }

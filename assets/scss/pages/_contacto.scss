@@ -1,21 +1,31 @@
 .contacto {
   font-family: "Futura Bold";
-  margin-bottom: 4rem;
+  @media (min-width: 992px) {
+    & {
+      background-image: url("../../assets/img/contacto/Linea-Contacto2.png");
+      background-repeat: repeat-y;
+      background-position: 0rem 52rem;
+    }
+  }
+  padding: 10rem 4rem;
   &__info {
     align-self: center;
     text-align: center;
+    margin: 2rem 0;
     @media (min-width: 992px) {
+      margin: 0;
       text-align: start;
     }
     &__titulo {
       font-family: "Futura Heavy";
-      font-size: 2rem;
+      font-size: 3rem;
       @media (min-width: 992px) {
         margin-left: 2rem;
       }
     }
     &__subtitulo {
       font-family: "Futura Md";
+      font-size: 2rem;
       margin-bottom: 2rem;
       @media (min-width: 992px) {
         margin-left: 1.5rem;
@@ -35,6 +45,7 @@
         margin-bottom: 0;
         align-content: center;
         font-family: "Futura Book";
+        font-size: 1.5rem;
       }
     }
   }

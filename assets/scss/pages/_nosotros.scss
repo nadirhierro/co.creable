@@ -73,8 +73,14 @@
       flex-direction: column;
       align-items: center;
       gap: 1.5rem;
-      padding: 4rem 4rem;
-      min-height: 500px;
+      padding: 1rem 4rem;
+
+      @media (min-width: 768px) {
+        & {
+          min-height: 500px;
+          padding: 4rem 4rem;
+        }
+      }
       .integrante__cajaImagen {
         display: flex;
         justify-content: center;
