@@ -3,13 +3,123 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  height: 100vh;
   .modal-content {
-    width: 50rem;
-    height: 50rem;
+    border: none !important;
     background-color: transparent;
     background-image: url("../../assets/img/index/ruedaindex.png");
-    background-size: 80%;
+    background-size: 350px 350px;
     background-repeat: no-repeat;
     background-position: center;
+    width: 350px;
+    height: 350px;
+    @media (min-width: 768px) {
+      & {
+        width: 600px;
+        height: 600px;
+        background-size: 600px 600px;
+      }
+    }
+    .fila {
+      position: absolute;
+      font-family: "Futura Md Bold";
+      &--menu {
+        top: 20px;
+        left: 55px;
+        color: black;
+        h3 {
+          font-family: "Futura Heavy";
+          text-align: center;
+          font-size: 1.3rem;
+        }
+        h4 {
+          font-size: 1.3rem;
+        }
+      }
+      &--cerrar {
+        top: 20px;
+        right: 30px;
+        border-radius: 50%;
+        i {
+          color: #ea7158 !important;
+        }
+        &:focus {
+          box-shadow: none !important;
+        }
+      }
+      &--inicio {
+        top: 170px;
+        left: 25px;
+      }
+      &--proyectos {
+        top: 170px;
+        right: 5px;
+      }
+      &--nosotros {
+        top: 240px;
+        left: 40px;
+      }
+      &--contacto {
+        top: 300px;
+        left: 140px;
+      }
+      &--servicios {
+        top: 240px;
+        right: 35px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+      }
+      @media (min-width: 768px) {
+        & {
+          &--menu {
+            top: 55px;
+            left: 115px;
+            color: black;
+            h3 {
+              font-family: "Futura Heavy";
+              text-align: center;
+              font-size: 2.5rem;
+            }
+            h4 {
+              font-size: 2rem;
+            }
+          }
+          &--cerrar {
+            top: 60px;
+            right: 70px;
+            border-radius: 50%;
+            i {
+              color: #ea7158 !important;
+            }
+          }
+          &--inicio {
+            top: 280px;
+            left: 30px;
+          }
+          &--proyectos {
+            top: 280px;
+            right: 15px;
+          }
+          &--nosotros {
+            top: 400px;
+            left: 70px;
+          }
+          &--contacto {
+            top: 500px;
+            left: 240px;
+          }
+          &--servicios {
+            top: 400px;
+            right: 65px;
+          }
+          a {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
   }
 }
