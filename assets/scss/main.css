@@ -1,3 +1,7 @@
+* {
+  font-size: 16px;
+}
+
 .container-fluid {
   padding: 0;
 }
@@ -248,7 +252,7 @@
   .modal-dialog .modal-content .fila--menu h3 {
     font-family: "Futura Heavy";
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .modal-dialog .modal-content .fila--menu h4 {
     font-size: 2rem;
@@ -924,7 +928,7 @@
     margin-right: 2rem;
     padding: 0.5rem 2rem;
     top: 0;
-    right: 0;
+    right: 12%;
     pointer-events: auto;
     color: white;
     background-color: #50b8b0;
