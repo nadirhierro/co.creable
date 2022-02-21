@@ -34,19 +34,23 @@
   src: url("../../assets/fonts/FuturaStd-Book_0.otf") format("opentype");
 }
 
-.headerIndex {
-  position: absolute;
+@media (min-width: 992px) {
+  .headerIndex {
+    position: absolute;
+  }
 }
 
 .headerIndex__nav {
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-bottom: 2rem;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 992px) {
   .headerIndex__nav {
+    display: flex;
     margin-right: 0 !important;
     align-self: end;
     flex-direction: column;
@@ -90,8 +94,15 @@
 }
 
 .headerSecciones__nav {
+  display: none;
   z-index: 2;
   justify-content: space-between;
+}
+
+@media (min-width: 992px) {
+  .headerSecciones__nav {
+    display: flex;
+  }
 }
 
 .headerSecciones__nav__boximg {
@@ -130,9 +141,26 @@
   width: 6rem;
 }
 
+.navMobile {
+  padding: 0 1rem;
+  font-family: "Futura Md BT";
+  position: relative;
+  z-index: 4;
+}
+
+.navMobile__img {
+  height: 80px;
+  width: 96px;
+}
+
+@media (min-width: 992px) {
+  .navMobile {
+    display: none;
+  }
+}
+
 .modal-dialog {
-  max-width: none !important;
-  width: 100%;
+  font-family: "Futura Md BT";
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -141,19 +169,19 @@
 .modal-dialog .modal-content {
   border: none !important;
   background-color: transparent;
-  background-image: url("../../assets/img/index/ruedaindex.png");
-  background-size: 350px 350px;
+  background-image: url("../../assets/img/menu/ruedaMenu.png");
+  background-size: 800px 450px;
   background-repeat: no-repeat;
   background-position: center;
-  width: 350px;
-  height: 350px;
+  width: 800px;
+  height: 500px;
 }
 
 @media (min-width: 768px) {
   .modal-dialog .modal-content {
-    width: 600px;
-    height: 600px;
-    background-size: 600px 600px;
+    width: 800px;
+    height: 450px;
+    background-size: 800px 450px;
   }
 }
 
@@ -163,8 +191,8 @@
 }
 
 .modal-dialog .modal-content .fila--menu {
-  top: 20px;
-  left: 55px;
+  top: 25%;
+  left: 23%;
   color: black;
 }
 
@@ -179,8 +207,8 @@
 }
 
 .modal-dialog .modal-content .fila--cerrar {
-  top: 20px;
-  right: 30px;
+  top: 140px;
+  left: 240px;
   border-radius: 50%;
 }
 
@@ -280,36 +308,37 @@
   z-index: 1000;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .hero {
     height: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .hero {
     background-image: url("../../assets/img/index/heroIndex.jpg");
   }
 }
 
 .hero img {
+  display: none;
   vertical-align: top;
   width: 100%;
   opacity: 0;
 }
 
+@media (min-width: 992px) {
+  .hero img {
+    display: block;
+  }
+}
+
 .hero__bienvenida {
-  position: absolute;
-  margin-top: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   z-index: 1001;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .hero__bienvenida {
     margin-top: 22%;
+    position: absolute;
   }
 }
 
@@ -323,8 +352,6 @@
 
 @media (min-width: 768px) {
   .hero__bienvenida__titulo {
-    max-width: 572px;
-    align-self: flex-end;
     font-size: 2.5rem;
   }
 }
@@ -332,6 +359,7 @@
 @media (min-width: 992px) {
   .hero__bienvenida__titulo {
     max-width: 772px;
+    align-self: flex-end;
     font-size: 3rem;
   }
 }
@@ -349,14 +377,13 @@
 
 @media (min-width: 768px) {
   .hero__bienvenida__link {
-    align-self: flex-end;
     font-size: 1.2rem;
-    margin-right: 15rem;
   }
 }
 
 @media (min-width: 992px) {
   .hero__bienvenida__link {
+    align-self: flex-end;
     font-size: 1.5rem;
     margin-right: 15rem;
   }
@@ -1014,7 +1041,12 @@
   font-weight: bold;
   text-align: left;
   font-size: 1.4rem;
-  margin-left: 55px;
+}
+
+@media (min-width: 992px) {
+  .landNosotros__data__parrafo {
+    margin-left: 55px;
+  }
 }
 
 .landNosotros__equipo__titulo {
@@ -1175,6 +1207,12 @@
   background-color: white;
 }
 
+@media (min-width: 992px) {
+  .landServicios__servicio__data ul li {
+    font-size: 1.2rem;
+  }
+}
+
 .proyectos__titulo {
   font-family: "Futura Heavy";
   margin-top: 2rem;
@@ -1191,7 +1229,13 @@
 .proyectos__proyecto__descripcion {
   padding: 1rem;
   font-family: "Futura Md BT";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  .proyectos__proyecto__descripcion {
+    font-size: 1.5rem;
+  }
 }
 
 .proyectos__proyecto__titulo {
@@ -1248,6 +1292,10 @@
   }
 }
 
+.proyectos__proyecto__grillaDer .img2 {
+  width: 100% !important;
+}
+
 .contacto {
   font-family: "Futura Bold";
   padding: 10rem 4rem;
@@ -1257,7 +1305,7 @@
   .contacto {
     background-image: url("../../assets/img/contacto/Linea-Contacto.png");
     background-repeat: repeat-y;
-    background-position: 0rem 52rem;
+    background-position: -1.5rem 52rem;
   }
 }
 
@@ -1276,24 +1324,26 @@
 
 .contacto__info__titulo {
   font-family: "Futura Heavy";
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 @media (min-width: 992px) {
   .contacto__info__titulo {
     margin-left: 2rem;
+    font-size: 3rem;
   }
 }
 
 .contacto__info__subtitulo {
   font-family: "Futura Md";
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
 }
 
 @media (min-width: 992px) {
   .contacto__info__subtitulo {
     margin-left: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -1316,7 +1366,13 @@
   margin-bottom: 0;
   align-content: center;
   font-family: "Futura Book";
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  .contacto__info__flex__dato {
+    font-size: 1.3rem;
+  }
 }
 
 .contacto__mapa {

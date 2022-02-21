@@ -1,11 +1,17 @@
 .headerIndex {
-  position: absolute;
+  @media (min-width: 992px) {
+    & {
+      position: absolute;
+    }
+  }
   &__nav {
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 2rem;
-    @media (min-width: 767px) {
+    @media (min-width: 992px) {
+      display: flex;
       margin-right: 0 !important;
       align-self: end;
       flex-direction: column;

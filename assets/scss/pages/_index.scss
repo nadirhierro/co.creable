@@ -5,31 +5,32 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  @media (min-width: 576px) {
+  @media (min-width: 992px) {
     & {
       height: auto;
-    }
-  }
-  @media (min-width: 768px) {
-    & {
       background-image: url("../../assets/img/index/heroIndex.jpg");
     }
   }
   z-index: 1000;
   img {
+    display: none;
     vertical-align: top;
     width: 100%;
     opacity: 0;
+    @media (min-width: 992px) {
+      & {
+        display: block;
+      }
+    }
   }
   &__bienvenida {
-    position: absolute;
-    margin-top: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @media (min-width: 576px) {
+    @media (min-width: 992px) {
       & {
         margin-top: 22%;
+        position: absolute;
       }
     }
     z-index: 1001;
@@ -41,14 +42,13 @@
       text-align: center;
       @media (min-width: 768px) {
         & {
-          max-width: 572px;
-          align-self: flex-end;
           font-size: 2.5rem;
         }
       }
       @media (min-width: 992px) {
         & {
           max-width: 772px;
+          align-self: flex-end;
           font-size: 3rem;
         }
       }
@@ -64,14 +64,14 @@
       box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
       @media (min-width: 768px) {
         & {
-          align-self: flex-end;
           font-size: 1.2rem;
-          margin-right: 15rem;
         }
       }
       @media (min-width: 992px) {
         & {
+          align-self: flex-end;
           font-size: 1.5rem;
+
           margin-right: 15rem;
         }
       }

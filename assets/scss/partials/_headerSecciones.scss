@@ -1,8 +1,12 @@
 .headerSecciones {
   padding-top: 1rem !important;
   &__nav {
+    display: none;
     z-index: 2;
     justify-content: space-between;
+    @media (min-width: 992px) {
+      display: flex;
+    }
     &__boximg {
       display: flex;
       justify-content: center;

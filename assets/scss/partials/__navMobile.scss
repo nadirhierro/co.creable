@@ -1,0 +1,15 @@
+.navMobile {
+  padding: 0 1rem;
+  font-family: "Futura Md BT";
+  position: relative;
+  z-index: 4;
+  &__img {
+    height: 80px;
+    width: 96px;
+  }
+  @media (min-width: 992px) {
+    & {
+      display: none;
+    }
+  }
+}

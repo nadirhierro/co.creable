@@ -1,31 +1,30 @@
 .modal-dialog {
-  max-width: none !important;
-  width: 100%;
+  font-family: "Futura Md BT";
   display: flex;
   justify-content: center;
   height: 100vh;
   .modal-content {
     border: none !important;
     background-color: transparent;
-    background-image: url("../../assets/img/index/ruedaindex.png");
-    background-size: 350px 350px;
+    background-image: url("../../assets/img/menu/ruedaMenu.png");
+    background-size: 800px 450px;
     background-repeat: no-repeat;
     background-position: center;
-    width: 350px;
-    height: 350px;
+    width: 800px;
+    height: 500px;
     @media (min-width: 768px) {
       & {
-        width: 600px;
-        height: 600px;
-        background-size: 600px 600px;
+        width: 800px;
+        height: 450px;
+        background-size: 800px 450px;
       }
     }
     .fila {
       position: absolute;
       font-family: "Futura Md Bold";
       &--menu {
-        top: 20px;
-        left: 55px;
+        top: 25%;
+        left: 23%;
         color: black;
         h3 {
           font-family: "Futura Heavy";
@@ -37,8 +36,8 @@
         }
       }
       &--cerrar {
-        top: 20px;
-        right: 30px;
+        top: 140px;
+        left: 240px;
         border-radius: 50%;
         i {
           color: #ea7158 !important;

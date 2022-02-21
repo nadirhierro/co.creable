@@ -12,7 +12,12 @@
     &__descripcion {
       padding: 1rem;
       font-family: "Futura Md BT";
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      @media (min-width: 992px) {
+        & {
+          font-size: 1.5rem;
+        }
+      }
     }
     &__titulo {
       text-align: center;
@@ -40,6 +45,9 @@
     }
     &__grillaDer {
       @include grillaDer;
+      .img2 {
+        width: 100% !important;
+      }
     }
   }
 }
