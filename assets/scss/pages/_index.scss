@@ -1,8 +1,20 @@
 .hero {
+  height: 80vh;
   font-family: "Futura Md BT";
-  background-image: url("../../assets/img/index/heroIndex.jpg");
+  background-image: url("../../assets/img/index/heroIndex2.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  @media (min-width: 576px) {
+    & {
+      height: auto;
+    }
+  }
+  @media (min-width: 768px) {
+    & {
+      background-image: url("../../assets/img/index/heroIndex.jpg");
+    }
+  }
   z-index: 1000;
   img {
     vertical-align: top;
@@ -11,11 +23,15 @@
   }
   &__bienvenida {
     position: absolute;
-    margin: 22% 0 0 0;
+    margin-top: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    @media (min-width: 576px) {
+      & {
+        margin-top: 22%;
+      }
+    }
     z-index: 1001;
     &__titulo {
       margin-bottom: 2rem;
@@ -24,9 +40,17 @@
       color: $amarillo;
       text-align: center;
       @media (min-width: 768px) {
-        font-size: 3rem;
-        max-width: 772px;
-        align-self: flex-end;
+        & {
+          max-width: 572px;
+          align-self: flex-end;
+          font-size: 2.5rem;
+        }
+      }
+      @media (min-width: 992px) {
+        & {
+          max-width: 772px;
+          font-size: 3rem;
+        }
       }
     }
     &__link {
@@ -34,13 +58,22 @@
       align-self: center;
       color: white;
       font-family: "Futura Md BT";
-      font-size: 1.5rem;
+      font-size: 1rem;
       text-decoration: none;
       background-color: $cyan;
       box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
       @media (min-width: 768px) {
-        align-self: flex-end;
-        margin-right: 15rem;
+        & {
+          align-self: flex-end;
+          font-size: 1.2rem;
+          margin-right: 15rem;
+        }
+      }
+      @media (min-width: 992px) {
+        & {
+          font-size: 1.5rem;
+          margin-right: 15rem;
+        }
       }
     }
   }
