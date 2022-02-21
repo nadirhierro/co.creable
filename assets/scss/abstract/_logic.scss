@@ -29,15 +29,8 @@
 @mixin circle {
   cursor: pointer;
   z-index: 2;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  background-color: $amarillo;
-  mask-image: radial-gradient(
-    circle farthest-side at center,
-    transparent 40%,
-    white 40%
-  );
+  width: 100px;
+  height: 80px;
   @media (min-width: 768px) {
     & {
       margin-top: 2rem;
@@ -49,13 +42,6 @@
 @mixin circle2 {
   cursor: pointer;
   z-index: 2;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  background-color: $amarillo;
-  mask-image: radial-gradient(
-    circle farthest-side at center,
-    transparent 40%,
-    white 40%
-  );
+  width: 100px;
+  height: 100px;
 }
