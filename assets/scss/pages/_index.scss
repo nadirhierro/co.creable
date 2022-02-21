@@ -1,16 +1,21 @@
 .hero {
-  height: 80vh;
   font-family: "Futura Md BT";
   background-image: url("../../assets/img/index/heroIndex.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   z-index: 1000;
+  img {
+    vertical-align: top;
+    width: 100%;
+    opacity: 0;
+  }
   &__bienvenida {
+    position: absolute;
+    margin: 22% 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 8rem;
+
     z-index: 1001;
     &__titulo {
       margin-bottom: 2rem;
@@ -21,7 +26,6 @@
       @media (min-width: 768px) {
         font-size: 3rem;
         max-width: 772px;
-        margin-right: 4rem;
         align-self: flex-end;
       }
     }
@@ -251,7 +255,6 @@
       }
     }
     img {
-      width: 400px;
       height: auto;
       justify-self: center;
     }
@@ -268,23 +271,17 @@
         background-image: url("../../assets/img/index/ruedaindex.png");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 48%;
-      }
-    }
-    @media (min-width: 1200px) {
-      & {
-        margin-bottom: 10rem;
-        background-size: 48%;
+        background-size: 95%;
       }
     }
     @media (min-width: 1400px) {
       & {
-        background-size: 40%;
+        background-size: 85%;
       }
     }
     @media (min-width: 1600px) {
       & {
-        background-size: 35%;
+        background-size: 70%;
       }
     }
     &__integrante {
