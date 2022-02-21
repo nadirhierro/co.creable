@@ -78,7 +78,6 @@
       align-items: center;
       gap: 1.5rem;
       padding: 1rem 4rem;
-
       @media (min-width: 768px) {
         & {
           min-height: 500px;
@@ -108,11 +107,36 @@
           text-align: center;
           padding-top: 15px;
           font-size: 25px;
+          @media (min-width: 768px) {
+            & {
+              min-height: 140px;
+            }
+          }
+          @media (min-width: 1200px) {
+            & {
+              min-height: 100px;
+            }
+          }
         }
         &__cv {
           font-family: "Futura Md BT";
           text-align: center;
           font-weight: bold;
+          @media (min-width: 768px) {
+            & {
+              min-height: 120px;
+            }
+          }
+          @media (min-width: 992px) {
+            & {
+              min-height: 80px;
+            }
+          }
+        }
+      }
+      .integrante__linkedin {
+        i {
+          color: $cyan;
         }
       }
     }

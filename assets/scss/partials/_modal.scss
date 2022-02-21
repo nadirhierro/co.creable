@@ -7,37 +7,31 @@
     border: none !important;
     background-color: transparent;
     background-image: url("../../assets/img/menu/ruedaMenu.png");
-    background-size: 800px 450px;
+    background-size: 1000px 600px;
     background-repeat: no-repeat;
-    background-position: center;
-    width: 800px;
-    height: 500px;
-    @media (min-width: 768px) {
-      & {
-        width: 800px;
-        height: 450px;
-        background-size: 800px 450px;
-      }
-    }
+    background-position: -250px -50px;
+    width: 1000px;
     .fila {
-      position: absolute;
+      position: relative;
       font-family: "Futura Md Bold";
       &--menu {
-        top: 25%;
-        left: 23%;
+        top: 80px;
+        left: 0px;
         color: black;
         h3 {
           font-family: "Futura Heavy";
           text-align: center;
-          font-size: 1.3rem;
+          font-size: 1.8rem;
         }
         h4 {
+          font-family: "Futura Book";
           font-size: 1.3rem;
+          text-align: center;
         }
       }
       &--cerrar {
-        top: 140px;
-        left: 240px;
+        top: 0px;
+        left: 155px;
         border-radius: 50%;
         i {
           color: #ea7158 !important;
@@ -47,77 +41,30 @@
         }
       }
       &--inicio {
-        top: 170px;
-        left: 25px;
+        top: 130px;
+        left: 85px;
       }
       &--proyectos {
-        top: 170px;
-        right: 5px;
+        top: 100px;
+        right: -330px;
       }
       &--nosotros {
-        top: 240px;
-        left: 40px;
+        top: 150px;
+        left: 100px;
       }
       &--contacto {
-        top: 300px;
-        left: 140px;
+        top: 88px;
+        right: -310px;
       }
       &--servicios {
-        top: 240px;
-        right: 35px;
+        top: 180px;
+        right: -205px;
       }
       a {
+        font-family: "Futura Bold";
         text-decoration: none;
         color: black;
         font-size: 1.3rem;
-      }
-      @media (min-width: 768px) {
-        & {
-          &--menu {
-            top: 55px;
-            left: 115px;
-            color: black;
-            h3 {
-              font-family: "Futura Heavy";
-              text-align: center;
-              font-size: 2.3rem;
-            }
-            h4 {
-              font-size: 2rem;
-            }
-          }
-          &--cerrar {
-            top: 60px;
-            right: 70px;
-            border-radius: 50%;
-            i {
-              color: #ea7158 !important;
-            }
-          }
-          &--inicio {
-            top: 280px;
-            left: 30px;
-          }
-          &--proyectos {
-            top: 280px;
-            right: 15px;
-          }
-          &--nosotros {
-            top: 400px;
-            left: 70px;
-          }
-          &--contacto {
-            top: 500px;
-            left: 240px;
-          }
-          &--servicios {
-            top: 400px;
-            right: 65px;
-          }
-          a {
-            font-size: 2rem;
-          }
-        }
       }
     }
   }
