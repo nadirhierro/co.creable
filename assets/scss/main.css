@@ -129,7 +129,14 @@
   cursor: pointer;
   z-index: 2;
   width: 100px;
-  height: 100px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.headerSecciones__nav__menu__circle img {
+  width: 80px;
+  height: 80px;
 }
 
 .headerSecciones__nav__menu p {
@@ -200,13 +207,14 @@
 }
 
 .modal-dialog .modal-content .fila--cerrar {
-  top: 0px;
+  top: -10px;
   left: 155px;
   border-radius: 50%;
 }
 
-.modal-dialog .modal-content .fila--cerrar i {
-  color: #ea7158 !important;
+.modal-dialog .modal-content .fila--cerrar img {
+  height: 40px;
+  width: 40px;
 }
 
 .modal-dialog .modal-content .fila--cerrar:focus {
@@ -1087,13 +1095,13 @@
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  padding: 1rem 4rem;
+  padding: 3rem 4rem;
 }
 
 @media (min-width: 768px) {
   .landNosotros__equipo__integrante {
     min-height: 500px;
-    padding: 4rem 4rem;
+    padding: 2rem 2rem;
   }
 }
 
@@ -1107,12 +1115,6 @@
 .landNosotros__equipo__integrante .integrante__cajaImagen img {
   border-radius: 50%;
   border: solid #efa721;
-}
-
-@media (min-width: 768px) {
-  .landNosotros__equipo__integrante {
-    padding: 4rem 4rem;
-  }
 }
 
 .landNosotros__equipo__integrante .integrante__data {
@@ -1133,9 +1135,27 @@
   }
 }
 
+@media (min-width: 992px) {
+  .landNosotros__equipo__integrante .integrante__data__nombre {
+    min-height: 100px;
+  }
+}
+
 @media (min-width: 1200px) {
   .landNosotros__equipo__integrante .integrante__data__nombre {
     min-height: 100px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .landNosotros__equipo__integrante .integrante__data__nombre {
+    min-height: 80px;
+  }
+}
+
+@media (min-width: 1850px) {
+  .landNosotros__equipo__integrante .integrante__data__nombre {
+    min-height: auto;
   }
 }
 
@@ -1147,7 +1167,7 @@
 
 @media (min-width: 768px) {
   .landNosotros__equipo__integrante .integrante__data__cv {
-    min-height: 120px;
+    min-height: 100px;
   }
 }
 
@@ -1157,8 +1177,15 @@
   }
 }
 
-.landNosotros__equipo__integrante .integrante__linkedin i {
-  color: #50b8b0;
+@media (min-width: 1200px) {
+  .landNosotros__equipo__integrante .integrante__data__cv {
+    min-height: 50px;
+  }
+}
+
+.landNosotros__equipo__integrante .integrante__linkedin img {
+  width: 40px;
+  height: 40px;
 }
 
 .landServicios {

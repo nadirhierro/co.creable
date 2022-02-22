@@ -30,11 +30,12 @@
         }
       }
       &--cerrar {
-        top: 0px;
+        top: -10px;
         left: 155px;
         border-radius: 50%;
-        i {
-          color: #ea7158 !important;
+        img {
+          height: 40px;
+          width: 40px;
         }
         &:focus {
           box-shadow: none !important;

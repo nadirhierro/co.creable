@@ -92,11 +92,11 @@
       flex-direction: column;
       align-items: center;
       gap: 1.5rem;
-      padding: 1rem 4rem;
+      padding: 3rem 4rem;
       @media (min-width: 768px) {
         & {
           min-height: 500px;
-          padding: 4rem 4rem;
+          padding: 2rem 2rem;
         }
       }
       .integrante__cajaImagen {
@@ -107,11 +107,6 @@
         img {
           border-radius: 50%;
           border: solid #efa721;
-        }
-      }
-      @media (min-width: 768px) {
-        & {
-          padding: 4rem 4rem;
         }
       }
       .integrante__data {
@@ -127,9 +122,24 @@
               min-height: 140px;
             }
           }
+          @media (min-width: 992px) {
+            & {
+              min-height: 100px;
+            }
+          }
           @media (min-width: 1200px) {
             & {
               min-height: 100px;
+            }
+          }
+          @media (min-width: 1400px) {
+            & {
+              min-height: 80px;
+            }
+          }
+          @media (min-width: 1850px) {
+            & {
+              min-height: auto;
             }
           }
         }
@@ -139,7 +149,7 @@
           font-weight: bold;
           @media (min-width: 768px) {
             & {
-              min-height: 120px;
+              min-height: 100px;
             }
           }
           @media (min-width: 992px) {
@@ -147,11 +157,17 @@
               min-height: 80px;
             }
           }
+          @media (min-width: 1200px) {
+            & {
+              min-height: 50px;
+            }
+          }
         }
       }
       .integrante__linkedin {
-        i {
-          color: $cyan;
+        img {
+          width: 40px;
+          height: 40px;
         }
       }
     }
