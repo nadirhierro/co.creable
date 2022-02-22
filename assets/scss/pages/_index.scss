@@ -311,12 +311,17 @@
         background-image: url("../../assets/img/index/ruedaindex.png");
         background-position: center;
         background-repeat: no-repeat;
+        background-size: 80%;
+      }
+    }
+    @media (min-width: 1200px) {
+      & {
         background-size: 70%;
       }
     }
     @media (min-width: 1400px) {
       & {
-        background-size: 85%;
+        background-size: 75%;
       }
     }
     @media (min-width: 1600px) {
@@ -398,16 +403,16 @@
           &--1 {
             order: 1;
             align-self: flex-end;
-            top: 26%;
-            right: 50rem;
+            top: 22%;
+            right: 8%;
             img {
               align-self: flex-start;
             }
           }
           &--2 {
             order: 2;
-            right: -2%;
-            top: -15%;
+            right: -4%;
+            top: -10%;
             img {
               align-self: flex-end;
             }
@@ -415,7 +420,7 @@
           &--3 {
             order: 3;
             right: -46%;
-            top: -12%;
+            top: -18%;
             flex-direction: row;
             h4 {
               width: 15rem;
@@ -431,11 +436,11 @@
         & {
           &--1 {
             top: 22%;
-            right: 16%;
+            right: 14%;
           }
           &--2 {
-            top: -7%;
-            right: -12%;
+            top: -9%;
+            right: -10%;
           }
           &--3 {
             right: -46%;
@@ -447,7 +452,7 @@
         & {
           &--1 {
             top: 20%;
-            right: 14%;
+            right: 16%;
           }
           &--2 {
             top: -14%;
@@ -627,6 +632,14 @@
               }
             }
           }
+          @media (min-width: 1400px) {
+            .carousel-item {
+              height: 800px;
+              img {
+                min-height: 800px;
+              }
+            }
+          }
           .botonCarousel {
             display: none;
             @media (min-width: 768px) {
@@ -643,6 +656,7 @@
                 background-color: $cyan;
                 font-family: "Futura Md BT";
                 font-size: 1.4rem;
+                z-index: 1000;
               }
             }
           }

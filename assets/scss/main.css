@@ -613,13 +613,19 @@
     background-image: url("../../assets/img/index/ruedaindex.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nosotros__integrantes {
     background-size: 70%;
   }
 }
 
 @media (min-width: 1400px) {
   .nosotros__integrantes {
-    background-size: 85%;
+    background-size: 75%;
   }
 }
 
@@ -718,16 +724,16 @@
   .nosotros__integrantes__integrante--1 {
     order: 1;
     align-self: flex-end;
-    top: 26%;
-    right: 50rem;
+    top: 22%;
+    right: 8%;
   }
   .nosotros__integrantes__integrante--1 img {
     align-self: flex-start;
   }
   .nosotros__integrantes__integrante--2 {
     order: 2;
-    right: -2%;
-    top: -15%;
+    right: -4%;
+    top: -10%;
   }
   .nosotros__integrantes__integrante--2 img {
     align-self: flex-end;
@@ -735,7 +741,7 @@
   .nosotros__integrantes__integrante--3 {
     order: 3;
     right: -46%;
-    top: -12%;
+    top: -18%;
     flex-direction: row;
   }
   .nosotros__integrantes__integrante--3 h4 {
@@ -750,11 +756,11 @@
 @media (min-width: 1200px) {
   .nosotros__integrantes__integrante--1 {
     top: 22%;
-    right: 16%;
+    right: 14%;
   }
   .nosotros__integrantes__integrante--2 {
-    top: -7%;
-    right: -12%;
+    top: -9%;
+    right: -10%;
   }
   .nosotros__integrantes__integrante--3 {
     right: -46%;
@@ -765,7 +771,7 @@
 @media (min-width: 1400px) {
   .nosotros__integrantes__integrante--1 {
     top: 20%;
-    right: 14%;
+    right: 16%;
   }
   .nosotros__integrantes__integrante--2 {
     top: -14%;
@@ -944,6 +950,15 @@
   }
 }
 
+@media (min-width: 1400px) {
+  .nosotros .proyectos__carrusel .carousel .carousel-inner .carousel-item {
+    height: 800px;
+  }
+  .nosotros .proyectos__carrusel .carousel .carousel-inner .carousel-item img {
+    min-height: 800px;
+  }
+}
+
 .nosotros .proyectos__carrusel .carousel .carousel-inner .botonCarousel {
   display: none;
 }
@@ -962,6 +977,7 @@
     background-color: #50b8b0;
     font-family: "Futura Md BT";
     font-size: 1.4rem;
+    z-index: 1000;
   }
 }
 
