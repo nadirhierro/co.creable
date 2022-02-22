@@ -150,7 +150,7 @@
 
 .navMobile__img {
   height: 80px;
-  width: 96px;
+  width: 110px;
 }
 
 @media (min-width: 992px) {
@@ -590,8 +590,13 @@
 }
 
 .nosotros__rueda img {
-  height: auto;
   justify-self: center;
+}
+
+@media (min-width: 500px) {
+  .nosotros__rueda img {
+    max-width: 400px !important;
+  }
 }
 
 .nosotros__integrantes {
@@ -837,6 +842,7 @@
   display: flex;
   flex-direction: column;
   padding: 0;
+  padding-top: 4rem;
 }
 
 .nosotros .proyectos__titulo h2 {
@@ -983,21 +989,39 @@
 }
 
 .landNosotros__data {
-  margin: 4rem 4rem 4rem 4rem;
+  margin: 1.3rem;
+}
+
+@media (min-width: 576px) {
+  .landNosotros__data {
+    margin: 4rem;
+  }
 }
 
 .landNosotros__data__titulo {
   font-family: "Futura Heavy";
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .landNosotros__data__titulo {
+    font-size: 2.5rem;
+  }
 }
 
 .landNosotros__data__parrafo {
   font-family: "Futura Md BT";
   font-weight: bold;
   text-align: left;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .landNosotros__data__parrafo {
+    font-size: 1.4rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1198,6 +1222,12 @@
   }
 }
 
+.landServicios__servicio img:hover {
+  transform: scale(1.05, 1.05);
+  transition: 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .proyectos__titulo {
   font-family: "Futura Heavy";
   margin-top: 2rem;
@@ -1290,6 +1320,12 @@
 
 .proyectos__proyecto__grillaDer .img2 {
   width: 100% !important;
+}
+
+.proyectos img:hover {
+  transform: scale(1.05, 1.05);
+  transition: 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contacto {

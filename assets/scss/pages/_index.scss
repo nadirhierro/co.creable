@@ -291,8 +291,12 @@
       }
     }
     img {
-      height: auto;
       justify-self: center;
+      @media (min-width: 500px) {
+        & {
+          max-width: 400px !important;
+        }
+      }
     }
   }
   &__integrantes {
@@ -539,6 +543,7 @@
       display: flex;
       flex-direction: column;
       padding: 0;
+      padding-top: 4rem;
       h2 {
         text-align: center;
       }
