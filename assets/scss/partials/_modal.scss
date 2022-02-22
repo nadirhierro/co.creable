@@ -66,6 +66,12 @@
         color: black;
         font-size: 1.3rem;
       }
+      &--active {
+        a {
+          color: $cyan;
+          text-decoration: underline;
+        }
+      }
     }
   }
 }

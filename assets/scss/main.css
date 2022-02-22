@@ -245,6 +245,11 @@
   font-size: 1.3rem;
 }
 
+.modal-dialog .modal-content .fila--active a {
+  color: #50b8b0;
+  text-decoration: underline;
+}
+
 .hero {
   height: 80vh;
   font-family: "Futura Md BT";
