@@ -1400,7 +1400,8 @@
 
 .contacto {
   font-family: "Futura Bold";
-  padding: 10rem 4rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 
 @media (min-width: 576px) {
@@ -1409,6 +1410,12 @@
     background-repeat: repeat-y;
     background-size: 120% 120%;
     background-position: -10rem -3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .contacto {
+    padding: 10rem 4rem;
   }
 }
 
