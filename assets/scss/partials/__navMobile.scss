@@ -1,8 +1,10 @@
 .navMobile {
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: 0 1rem;
   font-family: "Futura Md BT";
-  position: relative;
-  z-index: 4;
+  z-index: 99999;
   &__img {
     height: 80px;
     width: 110px;

@@ -149,10 +149,12 @@
 }
 
 .navMobile {
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: 0 1rem;
   font-family: "Futura Md BT";
-  position: relative;
-  z-index: 4;
+  z-index: 99999;
 }
 
 .navMobile__img {
@@ -256,6 +258,16 @@
 .modal-dialog .modal-content .fila--active a {
   color: #50b8b0;
   text-decoration: underline;
+}
+
+main {
+  margin-top: 90px;
+}
+
+@media (min-width: 992px) {
+  main {
+    margin-top: 0;
+  }
 }
 
 .hero {
