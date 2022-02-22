@@ -260,7 +260,7 @@
     flex-direction: column;
     gap: 0.5rem;
     @media (min-width: 576px) {
-      top: 13.5%;
+      top: 13.2%;
     }
     &__cuadrado {
       height: 30px;
@@ -311,7 +311,7 @@
         background-image: url("../../assets/img/index/ruedaindex.png");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 95%;
+        background-size: 70%;
       }
     }
     @media (min-width: 1400px) {
@@ -398,8 +398,8 @@
           &--1 {
             order: 1;
             align-self: flex-end;
-            top: 18%;
-            right: 5%;
+            top: 26%;
+            right: 50rem;
             img {
               align-self: flex-start;
             }
@@ -430,16 +430,16 @@
       @media (min-width: 1200px) {
         & {
           &--1 {
-            top: 18%;
-            right: 8%;
+            top: 22%;
+            right: 16%;
           }
           &--2 {
-            top: -14%;
-            right: -5%;
+            top: -7%;
+            right: -12%;
           }
           &--3 {
-            right: -47%;
-            top: -7%;
+            right: -46%;
+            top: -15%;
           }
         }
       }
@@ -614,6 +614,19 @@
         }
         .carousel-inner {
           border-radius: 10px;
+          @media (min-width: 992px) {
+            & {
+              .carousel-item {
+                height: 500px;
+                img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  min-height: 500px;
+                }
+              }
+            }
+          }
           .botonCarousel {
             display: none;
             @media (min-width: 768px) {

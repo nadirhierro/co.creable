@@ -550,7 +550,7 @@
 
 @media (min-width: 576px) {
   .nosotros__cuadrados {
-    top: 13.5%;
+    top: 13.2%;
   }
 }
 
@@ -613,7 +613,7 @@
     background-image: url("../../assets/img/index/ruedaindex.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 95%;
+    background-size: 70%;
   }
 }
 
@@ -718,8 +718,8 @@
   .nosotros__integrantes__integrante--1 {
     order: 1;
     align-self: flex-end;
-    top: 18%;
-    right: 5%;
+    top: 26%;
+    right: 50rem;
   }
   .nosotros__integrantes__integrante--1 img {
     align-self: flex-start;
@@ -749,16 +749,16 @@
 
 @media (min-width: 1200px) {
   .nosotros__integrantes__integrante--1 {
-    top: 18%;
-    right: 8%;
+    top: 22%;
+    right: 16%;
   }
   .nosotros__integrantes__integrante--2 {
-    top: -14%;
-    right: -5%;
+    top: -7%;
+    right: -12%;
   }
   .nosotros__integrantes__integrante--3 {
-    right: -47%;
-    top: -7%;
+    right: -46%;
+    top: -15%;
   }
 }
 
@@ -930,6 +930,18 @@
 
 .nosotros .proyectos__carrusel .carousel .carousel-inner {
   border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  .nosotros .proyectos__carrusel .carousel .carousel-inner .carousel-item {
+    height: 500px;
+  }
+  .nosotros .proyectos__carrusel .carousel .carousel-inner .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+  }
 }
 
 .nosotros .proyectos__carrusel .carousel .carousel-inner .botonCarousel {
