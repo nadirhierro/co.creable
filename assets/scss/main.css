@@ -1220,12 +1220,23 @@
 
 .proyectos__proyecto__titulo {
   text-align: center;
-  min-width: 32.5%;
   margin-bottom: 3rem;
   margin-top: 2rem;
   display: inline-block;
   padding: 1.5rem 4rem;
   font-size: 1.3rem;
+}
+
+@media (min-width: 992px) {
+  .proyectos__proyecto__titulo {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .proyectos__proyecto__titulo {
+    max-width: 37.2%;
+  }
 }
 
 .proyectos__proyecto__titulo--amarillo {

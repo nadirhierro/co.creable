@@ -21,12 +21,21 @@
     }
     &__titulo {
       text-align: center;
-      min-width: 32.5%;
       margin-bottom: 3rem;
       margin-top: 2rem;
       display: inline-block;
       padding: 1.5rem 4rem;
       font-size: 1.3rem;
+      @media (min-width: 992px) {
+        & {
+          max-width: 50%;
+        }
+      }
+      @media (min-width: 1200px) {
+        & {
+          max-width: 37.2%;
+        }
+      }
       &--amarillo {
         background-color: $amarillo;
       }
