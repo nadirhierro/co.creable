@@ -1,10 +1,11 @@
 .contacto {
   font-family: "Futura Bold";
-  @media (min-width: 992px) {
+  @media (min-width: 576px) {
     & {
-      background-image: url("../../assets/img/contacto/Linea-Contacto.png");
+      background-image: url("../../assets/img/contacto/Linea-Contacto2.png");
       background-repeat: repeat-y;
-      background-position: -1.5rem 52rem;
+      background-size: 120% 120%;
+      background-position: -10rem -3rem;
     }
   }
   padding: 10rem 4rem;
