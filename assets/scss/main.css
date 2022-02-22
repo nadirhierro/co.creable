@@ -699,11 +699,24 @@
   }
 }
 
+.nosotros__integrantes__integrante--1 {
+  order: 2;
+}
+
+.nosotros__integrantes__integrante--2 {
+  order: 1;
+}
+
+.nosotros__integrantes__integrante--3 {
+  order: 3;
+}
+
 @media (min-width: 992px) {
   .nosotros__integrantes__integrante {
     position: relative;
   }
   .nosotros__integrantes__integrante--1 {
+    order: 1;
     align-self: flex-end;
     top: 18%;
     right: 5%;
@@ -712,6 +725,7 @@
     align-self: flex-start;
   }
   .nosotros__integrantes__integrante--2 {
+    order: 2;
     right: -2%;
     top: -15%;
   }
@@ -719,6 +733,7 @@
     align-self: flex-end;
   }
   .nosotros__integrantes__integrante--3 {
+    order: 3;
     right: -46%;
     top: -12%;
     flex-direction: row;
