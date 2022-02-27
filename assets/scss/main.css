@@ -1405,6 +1405,7 @@ main {
 }
 
 .proyectos__proyecto__titulo {
+  align-self: center;
   text-align: center;
   margin-bottom: 3rem;
   margin-top: 2rem;
@@ -1415,13 +1416,7 @@ main {
 
 @media (min-width: 992px) {
   .proyectos__proyecto__titulo {
-    max-width: 50%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .proyectos__proyecto__titulo {
-    max-width: 37.2%;
+    width: 50%;
   }
 }
 
@@ -1526,7 +1521,7 @@ main {
 }
 
 .contacto__info__subtitulo {
-  font-family: "Futura Md";
+  font-family: "Futura Md BT";
   font-size: 1.3rem;
   margin-bottom: 2rem;
 }
