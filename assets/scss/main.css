@@ -1145,13 +1145,20 @@ main {
 .landNosotros__equipo__integrante .integrante__cajaImagen {
   display: flex;
   justify-content: center;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
 }
 
 .landNosotros__equipo__integrante .integrante__cajaImagen img {
   border-radius: 50%;
   border: solid #efa721;
+}
+
+@media (min-width: 1400px) {
+  .landNosotros__equipo__integrante .integrante__cajaImagen {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .landNosotros__equipo__integrante .integrante__data {

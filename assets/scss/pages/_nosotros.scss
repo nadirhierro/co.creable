@@ -102,11 +102,17 @@
       .integrante__cajaImagen {
         display: flex;
         justify-content: center;
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
         img {
           border-radius: 50%;
           border: solid #efa721;
+        }
+        @media (min-width: 1400px) {
+          & {
+            width: 200px;
+            height: 200px;
+          }
         }
       }
       .integrante__data {
