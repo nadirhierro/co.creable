@@ -1271,14 +1271,13 @@ main {
 
 .landServicios {
   background-image: url("../../assets/img/servicios/linea-servicios.png");
-  background-size: 105% 105%;
-  background-position: 0 -4px;
+  background-size: 110% 110%;
+  background-position: -1px -4px;
 }
 
 @media (min-width: 992px) {
   .landServicios {
-    background-size: cover;
-    background-position: 45%;
+    background-position: 1% 45%;
   }
 }
 
