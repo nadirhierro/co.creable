@@ -28,7 +28,28 @@
   }
   @media (min-width: 1800px) {
     & {
+      background-size: cover;
+      background-position: 0rem 6rem;
+    }
+  }
+  @media (min-width: 1900px) {
+    & {
       background-position: 0rem 0rem;
+    }
+  }
+  @media (min-width: 2100px) {
+    & {
+      background-position: 0rem -5rem;
+    }
+  }
+  @media (min-width: 2300px) {
+    & {
+      background-position: 0rem 20%;
+    }
+  }
+  @media (min-width: 2400px) {
+    & {
+      background-position: 0rem 25%;
     }
   }
   &__hero {
@@ -86,6 +107,16 @@
       font-size: 1.8rem;
       margin-top: 100px;
       margin-bottom: 100px;
+      @media (min-width: 1800px) {
+        & {
+          margin-top: 150px;
+        }
+      }
+      @media (min-width: 2300px) {
+        & {
+          margin-top: 200px;
+        }
+      }
     }
     &__integrante {
       display: flex;
