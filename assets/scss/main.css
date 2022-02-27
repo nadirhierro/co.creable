@@ -376,6 +376,7 @@ main {
   margin-bottom: 8rem;
   flex-basis: 80%;
   max-width: 400px;
+  border-radius: 10px;
 }
 
 @media (min-width: 768px) {
@@ -388,7 +389,7 @@ main {
 @media (min-width: 992px) {
   .servicios__tarjeta {
     margin: 0.5rem 0.5rem 2rem 0.5rem;
-    flex-basis: 20%;
+    flex-basis: 23%;
   }
 }
 
@@ -407,28 +408,42 @@ main {
 
 @media (min-width: 992px) {
   .servicios__tarjeta__titulo {
-    min-height: 80px;
+    min-height: 95px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .servicios__tarjeta__titulo {
+    min-height: 70px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .servicios__tarjeta__titulo {
+    min-height: 50px;
   }
 }
 
 .servicios__tarjeta__img {
   display: flex;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .servicios__tarjeta__img img {
-  width: 200px !important;
-  height: auto;
+  max-width: 90% !important;
 }
 
 .servicios__tarjeta__lista {
-  padding: 0;
+  padding: 0 1rem;
   font-family: "Futura Md BT";
-  font-size: 1.2rem;
   text-align: center;
   list-style: none;
   margin-bottom: 4rem;
+}
+
+.servicios__tarjeta__lista li {
+  font-size: 1.2rem;
 }
 
 .servicios__tarjeta__offset {
@@ -456,6 +471,10 @@ main {
   align-self: center;
   font-size: 3rem;
   font-weight: bold;
+}
+
+.servicios__tarjeta__offset p {
+  font-family: "Futura Bold";
 }
 
 .servicios__tarjeta--1,

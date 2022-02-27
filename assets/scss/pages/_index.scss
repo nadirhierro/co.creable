@@ -100,6 +100,7 @@ main {
     margin-bottom: 8rem;
     flex-basis: 80%;
     max-width: 400px;
+    border-radius: 10px;
     @media (min-width: 768px) {
       & {
         margin: 1rem 1rem 6rem 1rem;
@@ -109,7 +110,7 @@ main {
     @media (min-width: 992px) {
       & {
         margin: 0.5rem 0.5rem 2rem 0.5rem;
-        flex-basis: 20%;
+        flex-basis: 23%;
       }
     }
     &__titulo {
@@ -124,26 +125,37 @@ main {
       }
       @media (min-width: 992px) {
         & {
-          min-height: 80px;
+          min-height: 95px;
+        }
+      }
+      @media (min-width: 1200px) {
+        & {
+          min-height: 70px;
+        }
+      }
+      @media (min-width: 1300px) {
+        & {
+          min-height: 50px;
         }
       }
     }
     &__img {
       display: flex;
       justify-content: center;
-      padding: 2rem 0;
+      padding: 1rem 0;
       img {
-        width: 200px !important;
-        height: auto;
+        max-width: 90% !important;
       }
     }
     &__lista {
-      padding: 0;
+      padding: 0 1rem;
       font-family: "Futura Md BT";
-      font-size: 1.2rem;
       text-align: center;
       list-style: none;
       margin-bottom: 4rem;
+      li {
+        font-size: 1.2rem;
+      }
     }
     &__offset {
       position: absolute;
@@ -167,6 +179,9 @@ main {
           font-size: 3rem;
           font-weight: bold;
         }
+      }
+      p {
+        font-family: "Futura Bold";
       }
     }
     &--1,
