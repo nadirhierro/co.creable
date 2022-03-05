@@ -1293,7 +1293,7 @@ main {
 
 @media (min-width: 992px) {
   .landServicios__servicio__boximg {
-    flex-basis: 36%;
+    flex-basis: 32%;
     order: 1;
   }
 }
@@ -1308,7 +1308,7 @@ main {
 
 @media (min-width: 992px) {
   .landServicios__servicio__data {
-    flex-basis: 27%;
+    flex-basis: 31%;
     order: 2;
   }
 }
